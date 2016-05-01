@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 2.0 
+PROJECT RGBMatrixPanel_CPLD
+DESIGN rgbmatrixpanel_cpld Normal
+DEVKIT LC4032V-75T44C
+ENTRY Pure Verilog HDL
+MODULE spi_to_rgbmatrixpanel.v
+MODSTYLE SPI_to_RGBMatrixPanel Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE SPI_to_RGBMatrixPanel

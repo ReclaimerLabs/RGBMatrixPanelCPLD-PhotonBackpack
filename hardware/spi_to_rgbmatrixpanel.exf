@@ -1,0 +1,109 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      rgbs[7:0]                     rgbs                  7          8            -1
+      Port          2      row[3:0]                      row                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      rgbs_7_                     rgbs[7]                       1            0            
+        Port      rgbs_6_                     rgbs[6]                       1            1            
+        Port      rgbs_5_                     rgbs[5]                       1            2            
+        Port      rgbs_4_                     rgbs[4]                       1            3            
+        Port      rgbs_3_                     rgbs[3]                       1            4            
+        Port      rgbs_2_                     rgbs[2]                       1            5            
+        Port      rgbs_1_                     rgbs[1]                       1            6            
+        Port      rgbs_0_                     rgbs[0]                       1            7            
+        Port      row_3_                      row[3]                       2            0            
+        Port      row_2_                      row[2]                       2            1            
+        Port      row_1_                      row[1]                       2            2            
+        Port      row_0_                      row[0]                       2            3            
+End
+Section Cross Reference File
+Design 'SPI_to_RGBMatrixPanel' created Mon Jan 11 00:28:27 2016
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst           rgbsDFFRH_1_                              rgbsDFFRH[1]
+   Inst           rgbsDFFRH_2_                              rgbsDFFRH[2]
+   Inst           rgbsDFFRH_3_                              rgbsDFFRH[3]
+   Inst           rgbsDFFRH_4_                              rgbsDFFRH[4]
+   Inst           rgbsDFFRH_5_                              rgbsDFFRH[5]
+   Inst           rgbsDFFRH_6_                              rgbsDFFRH[6]
+   Inst           rgbsDFFRH_7_                              rgbsDFFRH[7]
+   Inst           rowDFFCSH_0_                              rowDFFCSH[0]
+   Inst           rowDFFCSH_1_                              rowDFFCSH[1]
+   Inst           rowDFFCSH_2_                              rowDFFCSH[2]
+   Inst           rowDFFCSH_3_                              rowDFFCSH[3]
+   Inst           rgbsDFFRH_0_                              rgbsDFFRH[0]
+   Inst             counter_0_                                counter[0]
+   Inst             counter_1_                                counter[1]
+   Inst             counter_2_                                counter[2]
+   Inst                rgbs_0_                                   rgbs[0]
+   Inst                rgbs_1_                                   rgbs[1]
+   Inst                rgbs_2_                                   rgbs[2]
+   Inst                rgbs_3_                                   rgbs[3]
+   Inst                rgbs_4_                                   rgbs[4]
+   Inst                rgbs_5_                                   rgbs[5]
+   Inst                rgbs_6_                                   rgbs[6]
+   Inst                rgbs_7_                                   rgbs[7]
+   Inst                 row_0_                                    row[0]
+   Inst                 row_1_                                    row[1]
+   Inst                 row_2_                                    row[2]
+   Inst                 row_3_                                    row[3]
+   Inst              rgbs_i_7_                                 rgbs_i[7]
+   Inst           counter_i_1_                              counter_i[1]
+   Inst           counter_i_0_                              counter_i[0]
+   Inst           counter_i_2_                              counter_i[2]
+   Inst              rgbs_i_6_                                 rgbs_i[6]
+   Inst               row_i_0_                                  row_i[0]
+   Net            counter_0__n                                counter[0]
+   Net            counter_1__n                                counter[1]
+   Net            counter_2__n                                counter[2]
+   Net             rgbs_i_6__n                                 rgbs_i[6]
+   Net          counter_i_2__n                              counter_i[2]
+   Net          counter_i_1__n                              counter_i[1]
+   Net          counter_i_0__n                              counter_i[0]
+   Net             rgbs_i_7__n                                 rgbs_i[7]
+   Net              row_i_0__n                                  row_i[0]
+   Net             rgbs_c_0__n                                 rgbs_c[0]
+   Net               rgbs_0__n                                   rgbs[0]
+   Net             rgbs_c_1__n                                 rgbs_c[1]
+   Net               rgbs_1__n                                   rgbs[1]
+   Net             rgbs_c_2__n                                 rgbs_c[2]
+   Net               rgbs_2__n                                   rgbs[2]
+   Net             rgbs_c_3__n                                 rgbs_c[3]
+   Net               rgbs_3__n                                   rgbs[3]
+   Net             rgbs_c_4__n                                 rgbs_c[4]
+   Net               rgbs_4__n                                   rgbs[4]
+   Net             rgbs_c_5__n                                 rgbs_c[5]
+   Net               rgbs_5__n                                   rgbs[5]
+   Net             rgbs_c_6__n                                 rgbs_c[6]
+   Net               rgbs_6__n                                   rgbs[6]
+   Net             rgbs_c_7__n                                 rgbs_c[7]
+   Net              row_c_0__n                                  row_c[0]
+   Net                row_0__n                                    row[0]
+   Net              row_c_1__n                                  row_c[1]
+   Net                row_1__n                                    row[1]
+   Net              row_c_2__n                                  row_c[2]
+   Net                row_2__n                                    row[2]
+   Net              row_c_3__n                                  row_c[3]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     si
+        Input     clk
+        Input     reset
+        Output     rgbs_7_
+        Output     row_3_
+        Output     clk_out
+        Output     latch_out
+        Output     rgbs_6_
+        Output     rgbs_5_
+        Output     rgbs_4_
+        Output     rgbs_3_
+        Output     rgbs_2_
+        Output     rgbs_1_
+        Output     rgbs_0_
+        Output     row_2_
+        Output     row_1_
+        Output     row_0_
+End

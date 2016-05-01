@@ -1,0 +1,13 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit SPI_to_RGBMatrixPanel
+    Number of input ports   : 3
+    Number of output ports  : 4
+    Number of bidir ports   : 0
+    Number of instances     : 62
+    Number of nets          : 65
+
+No design errors found in circuit SPI_to_RGBMatrixPanel
+
+WriteBLIF ended normally.

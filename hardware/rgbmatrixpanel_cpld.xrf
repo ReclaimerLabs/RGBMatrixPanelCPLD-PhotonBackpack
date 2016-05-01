@@ -1,0 +1,16 @@
+Signal Name Cross Reference File
+
+ispLEVER Classic 2.0.00.17.20.15
+
+Design 'rgbmatrixpanel_cpld' created Mon Jan 11 00:28:27 2016
+
+
+ LEGEND:  '>'  Functional Block Port Separator
+          '/'  Hierarchy Path Separator
+          '@'  Automatically Generated Node
+
+
+Short Name                              Hierarchical Name
+----------                              -----------------
+
+ *** Shortened names not required for this design. ***

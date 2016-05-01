@@ -1,0 +1,17 @@
+si  i
+clk  i
+reset  i
+rgbs[7]  o
+rgbs[6]  o
+rgbs[5]  o
+rgbs[4]  o
+rgbs[3]  o
+rgbs[2]  o
+rgbs[1]  o
+rgbs[0]  o
+row[3]  o
+row[2]  o
+row[1]  o
+row[0]  o
+clk_out  o
+latch_out  o

@@ -1,0 +1,115 @@
+#PLAFILE     rgbmatrixpanel_cpld.bl5
+#DATE        Mon Jan 11 00:28:27 2016
+
+#DESIGN      rgbmatrixpanel_cpld
+#DEVICE      MACH4S-32
+
+
+// Default settings.
+DATA GLOBAL tINDIO:0
+
+
+// Signal locations
+DATA LOCATION si:A_*_42
+DATA LOCATION clk:A_*_40
+DATA LOCATION reset:A_*_43
+DATA LOCATION rgbs_7_:A_7_41
+DATA LOCATION row_3_:B_0_35
+DATA LOCATION rgbs_6_:A_9_44
+DATA LOCATION rgbs_5_:B_2_18
+DATA LOCATION clk_out:B_6_25
+DATA LOCATION rgbs_4_:B_3_19
+DATA LOCATION latch_out:B_7_26
+DATA LOCATION rgbs_3_:B_4_20
+DATA LOCATION rgbs_2_:B_5_21
+DATA LOCATION rgbs_1_:B_10_22
+DATA LOCATION rgbs_0_:B_12_24
+DATA LOCATION row_2_:B_1_31
+DATA LOCATION row_1_:B_9_30
+DATA LOCATION row_0_:B_8_29
+DATA LOCATION counter_0_:A_12
+DATA LOCATION counter_1_:A_5
+DATA LOCATION counter_2_:A_3
+DATA LOCATION inst_latch_needed:A_1
+DATA LOCATION row_inc_needed:A_0
+
+// Signals direction
+DATA IO_DIR si:IN
+DATA IO_DIR clk:IN
+DATA IO_DIR reset:IN
+DATA IO_DIR rgbs_7_:OUT
+DATA IO_DIR row_3_:OUT
+DATA IO_DIR rgbs_6_:OUT
+DATA IO_DIR rgbs_5_:OUT
+DATA IO_DIR clk_out:OUT
+DATA IO_DIR rgbs_4_:OUT
+DATA IO_DIR latch_out:OUT
+DATA IO_DIR rgbs_3_:OUT
+DATA IO_DIR rgbs_2_:OUT
+DATA IO_DIR rgbs_1_:OUT
+DATA IO_DIR rgbs_0_:OUT
+DATA IO_DIR row_2_:OUT
+DATA IO_DIR row_1_:OUT
+DATA IO_DIR row_0_:OUT
+
+// Signals using Shared Clock or CE
+DATA tBCLK rgbs_7_.C
+DATA tBCLK row_3_.C
+DATA tBCLK rgbs_6_.C
+DATA tBCLK rgbs_5_.C
+DATA tBCLK rgbs_4_.C
+DATA tBCLK rgbs_3_.C
+DATA tBCLK rgbs_2_.C
+DATA tBCLK rgbs_1_.C
+DATA tBCLK rgbs_0_.C
+DATA tBCLK row_2_.C
+DATA tBCLK row_1_.C
+DATA tBCLK row_0_.C
+DATA tBCLK counter_0_.C
+DATA tBCLK counter_1_.C
+DATA tBCLK counter_2_.C
+DATA tBCLK row_inc_needed.C
+
+// Signals using Shared Init Pterm
+DATA tBSR rgbs_7_.AR
+DATA tBSR row_3_.PR
+DATA tBSR rgbs_6_.AR
+DATA tBSR rgbs_5_.AR
+DATA tBSR clk_out.AR
+DATA tBSR rgbs_4_.AR
+DATA tBSR latch_out.AR
+DATA tBSR rgbs_3_.AR
+DATA tBSR rgbs_2_.AR
+DATA tBSR rgbs_1_.AR
+DATA tBSR rgbs_0_.AR
+DATA tBSR row_2_.PR
+DATA tBSR row_1_.PR
+DATA tBSR row_0_.PR
+DATA tBSR counter_0_.AR
+DATA tBSR counter_1_.AR
+DATA tBSR counter_2_.AR
+DATA tBSR inst_latch_needed.AR
+
+// Block Load Adders
+DATA tBLA row_inc_needed:1
+DATA tBLA counter_2_:1
+DATA tBLA counter_1_:1
+DATA tBLA counter_0_:1
+DATA tBLA clk:1
+DATA tBLA reset:1
+
+// Signals using OSM or fast 5-PTs path
+DATA tOSM rgbs_7_
+DATA tOSM row_3_
+DATA tOSM rgbs_6_
+DATA tOSM rgbs_5_
+DATA tOSM clk_out
+DATA tOSM rgbs_4_
+DATA tOSM latch_out
+DATA tOSM rgbs_3_
+DATA tOSM rgbs_2_
+DATA tOSM rgbs_1_
+DATA tOSM rgbs_0_
+DATA tOSM row_2_
+DATA tOSM row_1_
+DATA tOSM row_0_

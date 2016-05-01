@@ -1,0 +1,3 @@
+@E: CG342 :"D:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.v":27:12:27:21|Expecting target variable, found latch_need -- possible misspelling
+@E: CS187 :"D:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.v":66:0:66:8|Expecting endmodule
+

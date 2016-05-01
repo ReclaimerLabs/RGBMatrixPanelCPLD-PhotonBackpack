@@ -1,0 +1,52 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Mon Jan 11 00:28:22 2016
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch d:/projects/rgbmatrixpanel_cpld/hardware\SPI_to_RGBMatrixPanel.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "D:\projects\rgbmatrixpanel_cpld\hardware\SPI_to_RGBMatrixPanel.srr"
+
+Running SPI_to_RGBMatrixPanel|hardware
+
+Running: Compile on SPI_to_RGBMatrixPanel|hardware
+
+Running: Compile Process on SPI_to_RGBMatrixPanel|hardware
+
+Running: Compile Input on SPI_to_RGBMatrixPanel|hardware
+Copied D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs to D:\projects\rgbmatrixpanel_cpld\hardware\SPI_to_RGBMatrixPanel.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on SPI_to_RGBMatrixPanel|hardware
+Copied D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs to D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_s.srs
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Copied D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_mult.srs to D:\projects\rgbmatrixpanel_cpld\hardware\SPI_to_RGBMatrixPanel.srs
+Copied D:\projects\rgbmatrixpanel_cpld\hardware\SPI_to_RGBMatrixPanel.srr to D:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.srf
+Complete: Compile Process on SPI_to_RGBMatrixPanel|hardware
+Complete: Compile on SPI_to_RGBMatrixPanel|hardware
+
+Running: Map on SPI_to_RGBMatrixPanel|hardware
+
+Running: Map & Optimize on SPI_to_RGBMatrixPanel|hardware
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Complete: Map on SPI_to_RGBMatrixPanel|hardware
+Complete: Logic Synthesis on SPI_to_RGBMatrixPanel|hardware
+
+exit status=0
+
+exit status=0
+

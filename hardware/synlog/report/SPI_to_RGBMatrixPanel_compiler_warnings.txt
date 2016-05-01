@@ -1,0 +1,2 @@
+@W: CG133 :"D:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.v":21:17:21:30|No assignment to row_inc_needed
+

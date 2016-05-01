@@ -1,0 +1,1 @@
+-nodal -src rgbmatrixpanel_cpld.bl5 -type BLIF -presrc rgbmatrixpanel_cpld.bl3 -crf rgbmatrixpanel_cpld.crf -sif rgbmatrixpanel_cpld.sif -devfile "C:/ispLEVER_Classic2_0/ispcpld/dat/lc4k/m4s_32_30.dev" -lci rgbmatrixpanel_cpld.lct

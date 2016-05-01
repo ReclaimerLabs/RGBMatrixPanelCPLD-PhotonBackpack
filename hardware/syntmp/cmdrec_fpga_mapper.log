@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  D:\projects\rgbmatrixpanel_cpld\hardware  -part LC4064B  -package T44C  -grade -2.5   -ispmach4s -RWCheckOnRam 1 -areadelay 0 -minc -auto_constrain_io -summaryfile D:\projects\rgbmatrixpanel_cpld\hardware\synlog\report\SPI_to_RGBMatrixPanel_fpga_mapper.xml -top_level_module  SPI_to_RGBMatrixPanel  -multisrs  -ta_num_paths 3  -ta_num_points 0  -oedif  D:\projects\rgbmatrixpanel_cpld\hardware\SPI_to_RGBMatrixPanel.edi  -freq 200.000  D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_mult.srs  -ologparam  D:\projects\rgbmatrixpanel_cpld\hardware\syntmp\SPI_to_RGBMatrixPanel.plg  -osyn  D:\projects\rgbmatrixpanel_cpld\hardware\SPI_to_RGBMatrixPanel.srm  -prjdir  d:\projects\rgbmatrixpanel_cpld\hardware\  -prjname  SPI_to_RGBMatrixPanel  -log  D:\projects\rgbmatrixpanel_cpld\hardware\synlog\SPI_to_RGBMatrixPanel_fpga_mapper.srr 
+rc:0 success:1
+D:\projects\rgbmatrixpanel_cpld\hardware\SPI_to_RGBMatrixPanel.edi|o|1452500904|22873
+D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_mult.srs|i|1452500904|2699
+D:\projects\rgbmatrixpanel_cpld\hardware\syntmp\SPI_to_RGBMatrixPanel.plg|o|1452500904|0
+D:\projects\rgbmatrixpanel_cpld\hardware\SPI_to_RGBMatrixPanel.srm|o|1452500904|11974
+D:\projects\rgbmatrixpanel_cpld\hardware\synlog\SPI_to_RGBMatrixPanel_fpga_mapper.srr|o|1452500904|1497
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399394484|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399397322|8049664
