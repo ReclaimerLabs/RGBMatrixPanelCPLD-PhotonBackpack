@@ -1,1 +1,1 @@
-project -load d:/projects/rgbmatrixpanel_cpld/hardware/SPI_to_RGBMatrixPanel.prj
+project -load d:/projects/rgbmatrixpanelcpld-photonbackpack/hardware/SPI_to_RGBMatrixPanel.prj

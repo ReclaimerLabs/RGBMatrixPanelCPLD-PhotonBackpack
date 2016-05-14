@@ -1,6 +1,6 @@
 #-- Lattice Semiconductor Corporation Ltd.
-#-- Synplify OEM project file d:/projects/rgbmatrixpanel_cpld/hardware\SPI_to_RGBMatrixPanel.prj
-#-- Written on Mon Jan 11 00:28:14 2016
+#-- Synplify OEM project file d:/projects/rgbmatrixpanelcpld-photonbackpack/hardware\SPI_to_RGBMatrixPanel.prj
+#-- Written on Fri May 13 00:40:20 2016
 
 
 #device options

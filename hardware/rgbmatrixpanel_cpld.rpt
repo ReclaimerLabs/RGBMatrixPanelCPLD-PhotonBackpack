@@ -13,8 +13,8 @@ Tools->Fitter Report File Format...
 Project_Summary
 ~~~~~~~~~~~~~~~
 Project Name         :  rgbmatrixpanel_cpld
-Project Path         :  D:\Projects\RGBMatrixPanel_CPLD\hardware
-Project Fitted on    :  Mon Jan 11 00:28:27 2016
+Project Path         :  D:\Projects\RGBMatrixPanelCPLD-PhotonBackpack\hardware
+Project Fitted on    :  Fri May 13 00:40:37 2016
 
 Device               :  M4032_30
 Package              :  44
@@ -31,7 +31,7 @@ Source Format        :  Pure_Verilog_HDL
 Compilation_Times
 ~~~~~~~~~~~~~~~~~
 Prefit Time                     0 secs
-Load Design Time                0.01 secs
+Load Design Time                0.00 secs
 Partition Time                  0.00 secs
 Place Time                      0.00 secs
 Route Time                      0.00 secs
@@ -49,7 +49,7 @@ Total Flip-Flops                19
   Total D Flip-Flops            19
   Total T Flip-Flops            0
   Total Latches                 0
-Total Product Terms             72
+Total Product Terms             71
 
 Total Reserved Pins             0
 Total Locked Pins               15
@@ -57,7 +57,7 @@ Total Locked Nodes              0
 
 Total Unique Output Enables     0
 Total Unique Clocks             2
-Total Unique Clock Enables      3
+Total Unique Clock Enables      2
 Total Unique Resets             1
 Total Unique Presets            1
 
@@ -76,8 +76,8 @@ I/O Pins                           28       16     12    -->    57
 Logic Functions                    32       19     13    -->    59
   Input Registers                  30        0     30    -->     0
 
-GLB Inputs                         72       26     46    -->    36
-Logical Product Terms             160       39    121    -->    24
+GLB Inputs                         72       25     47    -->    34
+Logical Product Terms             160       36    124    -->    22
 Occupied GLBs                       2        2      0    -->   100
 Macrocells                         32       19     13    -->    59
 
@@ -85,7 +85,7 @@ Control Product Terms:
   GLB Clock/Clock Enables           2        2      0    -->   100
   GLB Reset/Presets                 2        0      2    -->     0
   Macrocell Clocks                 32        3     29    -->     9
-  Macrocell Clock Enables          32        6     26    -->    18
+  Macrocell Clock Enables          32        5     27    -->    15
   Macrocell Enables                32        0     32    -->     0
   Macrocell Resets                 32        0     32    -->     0
   Macrocell Presets                32        0     32    -->     0
@@ -113,10 +113,10 @@ GLB_Resource_Summary
 Maximum
   GLB                      36      *(1)     8   --     --             16       80       16
 -------------------------------------------------------------------------------------------
-  GLB    A      3     6     9      4/15     0    7      0              9       15        7
+  GLB    A      2     6     8      4/15     0    7      0              9       12        7
   GLB    B     11     6    17     12/15     0   12      0              4       24       12
 -------------------------------------------------------------------------------------------
-TOTALS:        14    12    26     16/30     0   19      0             13       39       19
+TOTALS:        13    12    25     16/30     0   19      0             13       36       19
 
 <Note> 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
 <Note> 2 : Four rightmost columns above reflect last status of the placement process.
@@ -131,7 +131,7 @@ GLB_Control_Summary
 Maximum
   GLB        1      1        16     16     16     16     16  
 ==============================================================================
-  GLB    A   1      0         1      2      0      0      0
+  GLB    A   1      0         1      1      0      0      0
   GLB    B   1      0         2      4      0      0      0
 ------------------------------------------------------------------------------
 
@@ -344,11 +344,11 @@ Buried_Signal_List
         N         L Mc   R E U C I F Fanout
 Mc GLB  P LL PTs  S Type E S P E R P       Signal
 ------------------------------------------------------------
-12   A  3  1   1  1 DFF    * R       2 AB  counter_0_
- 5   A  4  1   2  1 DFF    * R       2 AB  counter_1_
- 3   A  5  1   3  1 DFF    * R       2 AB  counter_2_
- 1   A  6  1   3  1 DFF    * R *     1 -B  inst_latch_needed
- 0   A  7  1   4  1 DFF      R *     2 AB  row_inc_needed
+ 9   A  3  1   1  1 DFF    * R       2 AB  counter_0_
+ 3   A  4  1   2  1 DFF    * R       2 AB  counter_1_
+ 1   A  5  1   3  1 DFF    * R       2 AB  counter_2_
+ 0   A  6  1   3  1 DFF    * R *     1 -B  inst_latch_needed
+12   A  6  1   1  1 DFF    * R       1 -B  row_inc_needed
 ------------------------------------------------------------
 
 <Note> CLS = Number of clusters used
@@ -455,11 +455,9 @@ row_3_.C = clk ; (1 pterm, 1 signal)
 row_3_.CE = row_inc_needed.Q ; (1 pterm, 1 signal)
 row_3_.AP = !reset ; (1 pterm, 1 signal)
 
-row_inc_needed.D = !counter_0_.Q & !counter_1_.Q & !counter_2_.Q
-       & row_inc_needed.Q
-    # rgbs_7_.Q & !counter_0_.Q & !counter_1_.Q & !counter_2_.Q ; (2 pterms, 5 signals)
+row_inc_needed.D = rgbs_7_.Q & !counter_0_.Q & !counter_1_.Q & !counter_2_.Q ; (1 pterm, 4 signals)
 row_inc_needed.C = clk ; (1 pterm, 1 signal)
-row_inc_needed.CE = reset ; (1 pterm, 1 signal)
+row_inc_needed.AR = !reset ; (1 pterm, 1 signal)
 
 
 

@@ -19,7 +19,7 @@ Done sucessfully with exit code 0.
 #Implementation: hardware
 
 $ Start of Compile
-#Mon Jan 11 00:28:22 2016
+#Fri May 13 00:40:28 2016
 
 Synopsys Verilog Compiler, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
@@ -30,30 +30,30 @@ Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated document
 @I::"C:\ispLEVER_Classic2_0\synpbase\lib\vlog\scemi_pipes.svh"
 @I::"C:\ispLEVER_Classic2_0\synpbase\lib\vlog\hypermods.v"
 @I::"C:\ispLEVER_Classic2_0\ispcpld\..\cae_library\synthesis\verilog\mach.v"
-@I::"D:\projects\rgbmatrixpanel_cpld\hardware\rgbmatrixpanel_cpld.h"
-@I::"D:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.v"
+@I::"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\rgbmatrixpanel_cpld.h"
+@I::"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v"
 Verilog syntax check successful!
-File D:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.v changed - recompiling
+Options changed - recompiling
 Selecting top level module SPI_to_RGBMatrixPanel
-@N: CG364 :"D:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.v":1:7:1:27|Synthesizing module SPI_to_RGBMatrixPanel
+@N: CG364 :"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v":1:7:1:27|Synthesizing module SPI_to_RGBMatrixPanel
 
-@A: CL282 :"D:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.v":46:4:46:9|Feedback mux created for signal row_inc_needed -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
 @END
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Jan 11 00:28:22 2016
+# Fri May 13 00:40:29 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
+File C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe changed - recompiling
 File D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Jan 11 00:28:23 2016
+# Fri May 13 00:40:30 2016
 
 ###########################################################]
 
@@ -61,7 +61,7 @@ Synplicity VHDL/Verilog HDL Synthesizer finished successfully
 
 Done: completed successfully.
 
-Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\edif2blf.exe @0616.rsp'
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\edif2blf.exe @3600.rsp'
 Original: 'edif2blf -edf SPI_to_RGBMatrixPanel.edi -out SPI_to_RGBMatrixPanel.bl0 -err automake.err -log SPI_to_RGBMatrixPanel.log -prj rgbmatrixpanel_cpld -lib "C:\ispLEVER_Classic2_0\ispcpld/dat/mach.edn" -net_Vcc VCC -net_GND GND -nbx -dse -tlw -cvt YES -...'
 
 Starting EDIF2BLIF....
@@ -71,8 +71,8 @@ Inspect circuit SPI_to_RGBMatrixPanel
     Number of input ports   : 3
     Number of output ports  : 4
     Number of bidir ports   : 0
-    Number of instances     : 62
-    Number of nets          : 65
+    Number of instances     : 58
+    Number of nets          : 61
 
 No design errors found in circuit SPI_to_RGBMatrixPanel
 
@@ -103,7 +103,7 @@ Hierarchical BLIF: 'rgbmatrixpanel_cpld.bl2'
 BLIFLINK complete.  Time: 1 second 
 Done: completed successfully.
 
-Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\impsrc.exe -gui -prj rgbmatrixpanel_cpld -lci rgbmatrixpanel_cpld.lct -log rgbmatrixpanel_cpld.imp -err automake.err -tti rgbmatrixpanel_cpld.bl2 -dir d:\projects\rgbmatrixpanel_cpld\hardware'
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\impsrc.exe -gui -prj rgbmatrixpanel_cpld -lci rgbmatrixpanel_cpld.lct -log rgbmatrixpanel_cpld.imp -err automake.err -tti rgbmatrixpanel_cpld.bl2 -dir d:\projects\rgbmatrixpanelcpld-photonbackpack\hardware'
 
 No pin assignment or valid property.
 No source constraints were imported.
@@ -120,20 +120,16 @@ U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
 ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
 Reading Open-ABEL 2 file rgbmatrixpanel_cpld.bl2...
 Merging feedbacks...
-Note 13707: Node rgbs_i_6__n is collapsed...
-Note 13707: Node counter_i_2__n is collapsed...
-Note 13707: Node row_inc_needed_i_m_i is collapsed...
 Note 13707: Node counter_i_1__n is collapsed...
-Note 13707: Node rgbs_i_7__n is collapsed...
-Note 13707: Node rowe_i is collapsed...
+Note 13707: Node counter_i_2__n is collapsed...
 Note 13707: Node reset_c is collapsed...
+Note 13707: Node rgbs_i_6__n is collapsed...
 Note 13707: Node counter_i_0__n is collapsed...
 Note 13707: Node latch_needed_1_sqmuxa is collapsed...
 Note 13707: Node counter_n1 is collapsed...
 Note 13707: Node counter_n2 is collapsed...
-Note 13707: Node row_n1 is collapsed...
 Note 13707: Node clk_out5_1 is collapsed...
-Note 13707: Node row_inc_needed_i_m is collapsed...
+Note 13707: Node row_n1 is collapsed...
 Note 13707: Node counter_c1 is collapsed...
 Note 13707: Node row_n2 is collapsed...
 Note 13707: Node row_n3 is collapsed...
@@ -178,13 +174,13 @@ Done: completed successfully.
 
 Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe -blif -inp rgbmatrixpanel_cpld.bl4 -out rgbmatrixpanel_cpld.bl5 -err automake.err -log rgbmatrixpanel_cpld.log -mod SPI_to_RGBMatrixPanel @rgbmatrixpanel_cpld.l0 -gui -sc'
 
-Prefit Logic Optimizer (May 31 2012)  Mon Jan 11 00:28:27 2016
+Prefit Logic Optimizer (May 31 2012)  Fri May 13 00:40:37 2016
 
 C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe -blif -inp rgbmatrixpanel_cpld.bl4 -out rgbmatrixpanel_cpld.bl5 -err automake.err -log rgbmatrixpanel_cpld.log -mod SPI_to_RGBMatrixPanel @rgbmatrixpanel_cpld.l0 -gui -sc 
 Number of pins (IO)    :    17
 Number of outputs (MC) :    19
 Number of registers    :    19
-Number of logic pterms :    29
+Number of logic pterms :    28
 C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe complete - Time 0 seconds
 
 Done: completed successfully.

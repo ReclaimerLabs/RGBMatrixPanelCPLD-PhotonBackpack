@@ -18,7 +18,7 @@ module SPI_to_RGBMatrixPanel( si, clk, reset, rgbs, row, clk_out, latch_out );
     reg          clk_out;
     reg          latch_out;
     reg          latch_needed;
-    reg          row_inc_needed;
+    reg          row_inc_needed; // not sure is needed
 
     always @ (negedge clk or negedge reset) begin
         if (reset == 1'b0) begin
@@ -48,6 +48,7 @@ module SPI_to_RGBMatrixPanel( si, clk, reset, rgbs, row, clk_out, latch_out );
             rgbs[7:0] <= 8'b00000000;
             counter <= 3'b000;
             row <= 4'b1111;
+            row_inc_needed <= 1'b0; //new
         end else begin
             counter <= counter + 1;
 	        rgbs[7:0] <= {rgbs[6:0], si};

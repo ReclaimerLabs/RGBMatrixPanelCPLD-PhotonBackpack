@@ -5,8 +5,8 @@ Inspect circuit SPI_to_RGBMatrixPanel
     Number of input ports   : 3
     Number of output ports  : 4
     Number of bidir ports   : 0
-    Number of instances     : 62
-    Number of nets          : 65
+    Number of instances     : 58
+    Number of nets          : 61
 
 No design errors found in circuit SPI_to_RGBMatrixPanel
 

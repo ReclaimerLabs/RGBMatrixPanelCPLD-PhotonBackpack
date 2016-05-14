@@ -20,8 +20,8 @@ Tools->Fitter Report File Format...
 <A name="Project_Summary"></A><FONT COLOR=maroon><U><B><big>Project_Summary</big></B></U></FONT>
 <BR>
 Project Name         :  rgbmatrixpanel_cpld
-Project Path         :  D:\Projects\RGBMatrixPanel_CPLD\hardware
-Project Fitted on    :  Mon Jan 11 00:28:27 2016
+Project Path         :  D:\Projects\RGBMatrixPanelCPLD-PhotonBackpack\hardware
+Project Fitted on    :  Fri May 13 00:40:37 2016
 
 Device               :  M4032_30
 Package              :  44
@@ -38,7 +38,7 @@ Source Format        :  Pure_Verilog_HDL
 <A name="Compilation_Times"></A><FONT COLOR=maroon><U><B><big>Compilation_Times</big></B></U></FONT>
 <BR>
 Prefit Time                     0 secs
-Load Design Time                0.01 secs
+Load Design Time                0.00 secs
 Partition Time                  0.00 secs
 Place Time                      0.00 secs
 Route Time                      0.00 secs
@@ -56,7 +56,7 @@ Total Flip-Flops                19
   Total D Flip-Flops            19
   Total T Flip-Flops            0
   Total Latches                 0
-Total Product Terms             72
+Total Product Terms             71
 
 Total Reserved Pins             0
 Total Locked Pins               15
@@ -64,7 +64,7 @@ Total Locked Nodes              0
 
 Total Unique Output Enables     0
 Total Unique Clocks             2
-Total Unique Clock Enables      3
+Total Unique Clock Enables      2
 Total Unique Resets             1
 Total Unique Presets            1
 
@@ -83,8 +83,8 @@ I/O Pins                           28       16     12    -->    57
 Logic Functions                    32       19     13    -->    59
   Input Registers                  30        0     30    -->     0
 
-GLB Inputs                         72       26     46    -->    36
-Logical Product Terms             160       39    121    -->    24
+GLB Inputs                         72       25     47    -->    34
+Logical Product Terms             160       36    124    -->    22
 Occupied GLBs                       2        2      0    -->   100
 Macrocells                         32       19     13    -->    59
 
@@ -92,7 +92,7 @@ Control Product Terms:
   GLB Clock/Clock Enables           2        2      0    -->   100
   GLB Reset/Presets                 2        0      2    -->     0
   Macrocell Clocks                 32        3     29    -->     9
-  Macrocell Clock Enables          32        6     26    -->    18
+  Macrocell Clock Enables          32        5     27    -->    15
   Macrocell Enables                32        0     32    -->     0
   Macrocell Resets                 32        0     32    -->     0
   Macrocell Presets                32        0     32    -->     0
@@ -119,10 +119,10 @@ Global Routing Pool                64       20     44    -->    31
 Maximum
   GLB                      36      *(1)     8   --     --             16       80       16
 </B>-------------------------------------------------------------------------------------------
-  GLB    A      3     6     9      4/15     0    7      0              9       15        7
+  GLB    A      2     6     8      4/15     0    7      0              9       12        7
   GLB    B     11     6    17     12/15     0   12      0              4       24       12
 -------------------------------------------------------------------------------------------
-TOTALS:        14    12    26     16/30     0   19      0             13       39       19
+TOTALS:        13    12    25     16/30     0   19      0             13       36       19
 
 &lt;Note&gt; 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
 &lt;Note&gt; 2 : Four rightmost columns above reflect last status of the placement process.
@@ -136,7 +136,7 @@ TOTALS:        14    12    26     16/30     0   19      0             13       3
 Maximum
   GLB        1      1        16     16     16     16     16  
 ==============================================================================
-</B>  GLB    A   1      0         1      2      0      0      0
+</B>  GLB    A   1      0         1      1      0      0      0
   GLB    B   1      0         2      4      0      0      0
 ------------------------------------------------------------------------------
 
@@ -229,15 +229,15 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name
 15    |  I_O  |   0  | A14|        |                 |       |
 16    |  I_O  |   0  | A15|        |                 |       |
 17    |INCLK2 |   1  |    |        |                 |       |
-18    |  I_O  |   1  | B0 |    *   |LVCMOS18         | Output|<A href=#12>rgbs_5_</A>
-19    |  I_O  |   1  | B1 |    *   |LVCMOS18         | Output|<A href=#14>rgbs_4_</A>
-20    |  I_O  |   1  | B2 |    *   |LVCMOS18         | Output|<A href=#16>rgbs_3_</A>
-21    |  I_O  |   1  | B3 |    *   |LVCMOS18         | Output|<A href=#17>rgbs_2_</A>
-22    |  I_O  |   1  | B4 |    *   |LVCMOS18         | Output|<A href=#18>rgbs_1_</A>
+18    |  I_O  |   1  | B0 |    *   |LVCMOS18         | Output|<A href=#11>rgbs_5_</A>
+19    |  I_O  |   1  | B1 |    *   |LVCMOS18         | Output|<A href=#13>rgbs_4_</A>
+20    |  I_O  |   1  | B2 |    *   |LVCMOS18         | Output|<A href=#14>rgbs_3_</A>
+21    |  I_O  |   1  | B3 |    *   |LVCMOS18         | Output|<A href=#15>rgbs_2_</A>
+22    |  I_O  |   1  | B4 |    *   |LVCMOS18         | Output|<A href=#16>rgbs_1_</A>
 23    | TMS   |   -  |    |        |                 |       |
-24    |  I_O  |   1  | B5 |    *   |LVCMOS18         | Output|<A href=#19>rgbs_0_</A>
-25    |  I_O  |   1  | B6 |    *   |LVCMOS18         | Output|<A href=#13>clk_out</A>
-26    |  I_O  |   1  | B7 |    *   |LVCMOS18         | Output|<A href=#15>latch_out</A>
+24    |  I_O  |   1  | B5 |    *   |LVCMOS18         | Output|<A href=#18>rgbs_0_</A>
+25    |  I_O  |   1  | B6 |    *   |LVCMOS18         | Output|<A href=#17>clk_out</A>
+26    |  I_O  |   1  | B7 |    *   |LVCMOS18         | Output|<A href=#19>latch_out</A>
 27    |GNDIO1 |   -  |    |        |                 |       |
 28    |VCCIO1 |   -  |    |        |                 |       |
 29    |  I_O  |   1  | B8 |    *   |LVCMOS18         | Output|<A href=#22>row_0_</A>
@@ -246,7 +246,7 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name
 32    | TDO   |   -  |    |        |                 |       |
 33    | VCC   |   -  |    |        |                 |       |
 34    | GND   |   -  |    |        |                 |       |
-35    |  I_O  |   1  | B12|    *   |LVCMOS18         | Output|<A href=#10>row_3_</A>
+35    |  I_O  |   1  | B12|    *   |LVCMOS18         | Output|<A href=#12>row_3_</A>
 36    |  I_O  |   1  | B13|        |                 |       |
 37    |  I_O  |   1  | B14|        |                 |       |
 38    | I_O/OE|   1  | B15|        |                 |       |
@@ -255,7 +255,7 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name
 41    |  I_O  |   0  | A1 |        |LVCMOS18         | Output|<A href=#9>rgbs_7_</A>
 42    |  I_O  |   0  | A2 |    *   |LVCMOS18         | Input |<A href=#6>si</A>
 43    |  I_O  |   0  | A3 |    *   |LVCMOS18         | Input |<A href=#8>reset</A>
-44    |  I_O  |   0  | A4 |        |LVCMOS18         | Output|<A href=#11>rgbs_6_</A>
+44    |  I_O  |   0  | A4 |        |LVCMOS18         | Output|<A href=#10>rgbs_6_</A>
 --------------------------------------------------------------------------------
 
 &lt;Note&gt; GLB Pad : This notation refers to the GLB I/O pad number in the device.
@@ -287,20 +287,20 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name
           N         L Mc   R E U C O F B Fanout
  Pin GLB  P LL PTs  S Type E S P E E P P       Slew Pullup Signal
 </B>--------------------------------------------------------------------
-  25   B  5  1   2  1 DFF    * R           --  Fast     Up <A href=#13>clk_out</A>
-  26   B  3  1   2  1 DFF    * R           --  Fast     Up <A href=#15>latch_out</A>
-  24   B  3  -   1  1 DFF    * R         1 -B  Fast     Up <A href=#19>rgbs_0_</A>
-  22   B  3  1   1  1 DFF    * R         1 -B  Fast     Up <A href=#18>rgbs_1_</A>
-  21   B  3  1   1  1 DFF    * R         1 -B  Fast     Up <A href=#17>rgbs_2_</A>
-  20   B  3  1   1  1 DFF    * R         1 -B  Fast     Up <A href=#16>rgbs_3_</A>
-  19   B  3  1   1  1 DFF    * R         1 -B  Fast     Up <A href=#14>rgbs_4_</A>
-  18   B  3  1   1  1 DFF    * R         1 A-  Fast     Up <A href=#12>rgbs_5_</A>
-  44   A  3  1   1  1 DFF    * R         1 A-  Fast     Up <A href=#11>rgbs_6_</A>
+  25   B  5  1   2  1 DFF    * R           --  Fast     Up <A href=#17>clk_out</A>
+  26   B  3  1   2  1 DFF    * R           --  Fast     Up <A href=#19>latch_out</A>
+  24   B  3  -   1  1 DFF    * R         1 -B  Fast     Up <A href=#18>rgbs_0_</A>
+  22   B  3  1   1  1 DFF    * R         1 -B  Fast     Up <A href=#16>rgbs_1_</A>
+  21   B  3  1   1  1 DFF    * R         1 -B  Fast     Up <A href=#15>rgbs_2_</A>
+  20   B  3  1   1  1 DFF    * R         1 -B  Fast     Up <A href=#14>rgbs_3_</A>
+  19   B  3  1   1  1 DFF    * R         1 -B  Fast     Up <A href=#13>rgbs_4_</A>
+  18   B  3  1   1  1 DFF    * R         1 A-  Fast     Up <A href=#11>rgbs_5_</A>
+  44   A  3  1   1  1 DFF    * R         1 A-  Fast     Up <A href=#10>rgbs_6_</A>
   41   A  3  1   1  1 DFF    * R         1 A-  Fast     Up <A href=#9>rgbs_7_</A>
   29   B  4  1   2  1 DFF  *   S *       1 -B  Fast     Up <A href=#22>row_0_</A>
   30   B  5  1   3  1 DFF  *   S *       1 -B  Fast     Up <A href=#21>row_1_</A>
   31   B  6  1   4  1 DFF  *   S *       1 -B  Fast     Up <A href=#20>row_2_</A>
-  35   B  7  1   5  1 DFF  *   S *       1 -B  Fast     Up <A href=#10>row_3_</A>
+  35   B  7  1   5  1 DFF  *   S *       1 -B  Fast     Up <A href=#12>row_3_</A>
 --------------------------------------------------------------------
 
 &lt;Note&gt; CLS = Number of clusters used
@@ -343,11 +343,11 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name
         N         L Mc   R E U C I F Fanout
 Mc GLB  P LL PTs  S Type E S P E R P       Signal
 </B>------------------------------------------------------------
-12   A  3  1   1  1 DFF    * R       2 AB  <A href=#23>counter_0_</A>
- 5   A  4  1   2  1 DFF    * R       2 AB  <A href=#24>counter_1_</A>
- 3   A  5  1   3  1 DFF    * R       2 AB  <A href=#25>counter_2_</A>
- 1   A  6  1   3  1 DFF    * R *     1 -B  <A href=#26>inst_latch_needed</A>
- 0   A  7  1   4  1 DFF      R *     2 AB  <A href=#27>row_inc_needed</A>
+ 9   A  3  1   1  1 DFF    * R       2 AB  <A href=#23>counter_0_</A>
+ 3   A  4  1   2  1 DFF    * R       2 AB  <A href=#24>counter_1_</A>
+ 1   A  5  1   3  1 DFF    * R       2 AB  <A href=#25>counter_2_</A>
+ 0   A  6  1   3  1 DFF    * R *     1 -B  <A href=#26>inst_latch_needed</A>
+12   A  6  1   1  1 DFF    * R       1 -B  <A href=#27>row_inc_needed</A>
 ------------------------------------------------------------
 
 &lt;Note&gt; CLS = Number of clusters used
@@ -366,7 +366,7 @@ Mc GLB  P LL PTs  S Type E S P E R P       Signal
 
 <A name="PostFit_Equations"></A><FONT COLOR=maroon><U><B><big>PostFit_Equations</big></B></U></FONT>
 <BR>
-<A name=13>clk_out.D</A> = !<A href=#23>counter_0_.Q</A> & !<A href=#24>counter_1_.Q</A> & !<A href=#25>counter_2_.Q</A> ; (1 pterm, 3 signals)
+<A name=17>clk_out.D</A> = !<A href=#23>counter_0_.Q</A> & !<A href=#24>counter_1_.Q</A> & !<A href=#25>counter_2_.Q</A> ; (1 pterm, 3 signals)
 clk_out.C = !<A href=#7>clk</A> ; (1 pterm, 1 signal)
 clk_out.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
@@ -387,43 +387,43 @@ counter_2_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
 <A name=26>inst_latch_needed.D</A> = !<A href=#23>counter_0_.Q</A> & !<A href=#24>counter_1_.Q</A> & !<A href=#25>counter_2_.Q</A> ; (1 pterm, 3 signals)
 inst_latch_needed.C = !<A href=#7>clk</A> ; (1 pterm, 1 signal)
-inst_latch_needed.CE = !( !<A href=#11>rgbs_6_.Q</A> & !<A href=#23>counter_0_.Q</A> & !<A href=#24>counter_1_.Q</A>
+inst_latch_needed.CE = !( !<A href=#10>rgbs_6_.Q</A> & !<A href=#23>counter_0_.Q</A> & !<A href=#24>counter_1_.Q</A>
        & !<A href=#25>counter_2_.Q</A> ) ; (1 pterm, 4 signals)
 inst_latch_needed.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=15>latch_out.D</A> = <A href=#26>inst_latch_needed.Q</A> ; (1 pterm, 1 signal)
+<A name=19>latch_out.D</A> = <A href=#26>inst_latch_needed.Q</A> ; (1 pterm, 1 signal)
 latch_out.C = !<A href=#7>clk</A> ; (1 pterm, 1 signal)
 latch_out.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=19>rgbs_0_.D</A> = <A href=#6>si</A> ; (1 pterm, 1 signal)
+<A name=18>rgbs_0_.D</A> = <A href=#6>si</A> ; (1 pterm, 1 signal)
 rgbs_0_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 rgbs_0_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=18>rgbs_1_.D</A> = <A href=#19>rgbs_0_.Q</A> ; (1 pterm, 1 signal)
+<A name=16>rgbs_1_.D</A> = <A href=#18>rgbs_0_.Q</A> ; (1 pterm, 1 signal)
 rgbs_1_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 rgbs_1_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=17>rgbs_2_.D</A> = <A href=#18>rgbs_1_.Q</A> ; (1 pterm, 1 signal)
+<A name=15>rgbs_2_.D</A> = <A href=#16>rgbs_1_.Q</A> ; (1 pterm, 1 signal)
 rgbs_2_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 rgbs_2_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=16>rgbs_3_.D</A> = <A href=#17>rgbs_2_.Q</A> ; (1 pterm, 1 signal)
+<A name=14>rgbs_3_.D</A> = <A href=#15>rgbs_2_.Q</A> ; (1 pterm, 1 signal)
 rgbs_3_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 rgbs_3_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=14>rgbs_4_.D</A> = <A href=#16>rgbs_3_.Q</A> ; (1 pterm, 1 signal)
+<A name=13>rgbs_4_.D</A> = <A href=#14>rgbs_3_.Q</A> ; (1 pterm, 1 signal)
 rgbs_4_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 rgbs_4_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=12>rgbs_5_.D</A> = <A href=#14>rgbs_4_.Q</A> ; (1 pterm, 1 signal)
+<A name=11>rgbs_5_.D</A> = <A href=#13>rgbs_4_.Q</A> ; (1 pterm, 1 signal)
 rgbs_5_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 rgbs_5_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=11>rgbs_6_.D</A> = <A href=#12>rgbs_5_.Q</A> ; (1 pterm, 1 signal)
+<A name=10>rgbs_6_.D</A> = <A href=#11>rgbs_5_.Q</A> ; (1 pterm, 1 signal)
 rgbs_6_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 rgbs_6_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=9>rgbs_7_.D</A> = <A href=#11>rgbs_6_.Q</A> ; (1 pterm, 1 signal)
+<A name=9>rgbs_7_.D</A> = <A href=#10>rgbs_6_.Q</A> ; (1 pterm, 1 signal)
 rgbs_7_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 rgbs_7_.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
@@ -445,7 +445,7 @@ row_2_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 row_2_.CE = <A href=#27>row_inc_needed.Q</A> ; (1 pterm, 1 signal)
 row_2_.AP = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=10>row_3_.D</A> = !<A href=#10>row_3_.Q</A> & <A href=#20>row_2_.Q</A> & <A href=#21>row_1_.Q</A> & <A href=#22>row_0_.Q</A>
+<A name=12>row_3_.D</A> = !<A href=#12>row_3_.Q</A> & <A href=#20>row_2_.Q</A> & <A href=#21>row_1_.Q</A> & <A href=#22>row_0_.Q</A>
     # row_3_.Q & !row_2_.Q
     # row_3_.Q & !row_1_.Q
     # row_3_.Q & !row_0_.Q ; (4 pterms, 4 signals)
@@ -453,11 +453,9 @@ row_3_.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
 row_3_.CE = <A href=#27>row_inc_needed.Q</A> ; (1 pterm, 1 signal)
 row_3_.AP = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
-<A name=27>row_inc_needed.D</A> = !<A href=#23>counter_0_.Q</A> & !<A href=#24>counter_1_.Q</A> & !<A href=#25>counter_2_.Q</A>
-       & <A href=#27>row_inc_needed.Q</A>
-    # <A href=#9>rgbs_7_.Q</A> & !counter_0_.Q & !counter_1_.Q & !counter_2_.Q ; (2 pterms, 5 signals)
+<A name=27>row_inc_needed.D</A> = <A href=#9>rgbs_7_.Q</A> & !<A href=#23>counter_0_.Q</A> & !<A href=#24>counter_1_.Q</A> & !<A href=#25>counter_2_.Q</A> ; (1 pterm, 4 signals)
 row_inc_needed.C = <A href=#7>clk</A> ; (1 pterm, 1 signal)
-row_inc_needed.CE = <A href=#8>reset</A> ; (1 pterm, 1 signal)
+row_inc_needed.AR = !<A href=#8>reset</A> ; (1 pterm, 1 signal)
 
 <BR>
 <BR>

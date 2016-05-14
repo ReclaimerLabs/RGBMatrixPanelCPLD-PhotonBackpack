@@ -1,1 +1,1 @@
-. SPI_to_RGBMatrixPanel spi_to_rgbmatrixpanel.v d:\projects\rgbmatrixpanel_cpld\hardware\spi_to_rgbmatrixpanel.v
+. SPI_to_RGBMatrixPanel spi_to_rgbmatrixpanel.v d:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v

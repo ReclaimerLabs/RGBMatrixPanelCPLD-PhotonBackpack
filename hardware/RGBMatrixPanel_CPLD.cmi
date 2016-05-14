@@ -18,8 +18,9 @@ Sort_Type=0
 Sort_Direction=0
 Skip_Next_Pin=0
 [Pin Attributes]
+sort_column_-1=Signal/Group Name
 Type=42,no
-Signal/Group Name=134,no
+Signal/Group Name=103,no
 Group Members=111,no
 GLB=36,no
 Macrocell=73,no

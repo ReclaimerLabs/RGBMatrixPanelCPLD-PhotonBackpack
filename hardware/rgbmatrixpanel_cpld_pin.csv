@@ -1,7 +1,7 @@
  ispLEVER Classic 2.0.00.17.20.15 Fitter Report File 
 Project Name,rgbmatrixpanel_cpld
-Project Path,D:\Projects\RGBMatrixPanel_CPLD\hardware
-Project Fitted on,Mon Jan 11 00:28:27 2016
+Project Path,D:\Projects\RGBMatrixPanelCPLD-PhotonBackpack\hardware
+Project Fitted on,Fri May 13 00:40:37 2016
 
 Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name
 1,TDI,-,,,,,

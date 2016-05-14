@@ -32,13 +32,13 @@ LIBS:valves
 LIBS:RGBMatrixPanel_CPLD-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title ""
-Date ""
-Rev ""
-Comp ""
+Date "2016-05-11"
+Rev "1"
+Comp "Reclaimer Labs LLC"
 Comment1 ""
 Comment2 ""
 Comment3 ""

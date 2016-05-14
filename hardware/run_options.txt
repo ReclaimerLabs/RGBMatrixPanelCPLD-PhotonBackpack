@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version I-2014.03LC 
-#--  Project file D:\projects\rgbmatrixpanel_cpld\hardware\run_options.txt
-#--  Written on Mon Jan 11 00:28:22 2016
+#--  Project file D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\run_options.txt
+#--  Written on Fri May 13 00:40:28 2016
 
 
 #project files
@@ -62,5 +62,5 @@ set_option -write_apr_constraint 1
 project -result_file "./SPI_to_RGBMatrixPanel.edi"
 
 #set log file 
-set_option log_file "D:/projects/rgbmatrixpanel_cpld/hardware/spi_to_rgbmatrixpanel.srf" 
+set_option log_file "D:/projects/rgbmatrixpanelcpld-photonbackpack/hardware/spi_to_rgbmatrixpanel.srf" 
 impl -active "hardware"

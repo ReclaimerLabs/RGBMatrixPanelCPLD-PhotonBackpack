@@ -1,16 +1,16 @@
 #--  Synopsys, Inc.
 #--  Version I-2014.03LC 
-#--  Project file D:\projects\rgbmatrixpanel_cpld\hardware\scratchproject.prs
+#--  Project file D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\scratchproject.prs
 
 #project files
 add_file -verilog "C:/ispLEVER_Classic2_0/ispcpld/../cae_library/synthesis/verilog/mach.v"
-add_file -verilog "D:/projects/rgbmatrixpanel_cpld/hardware/rgbmatrixpanel_cpld.h"
-add_file -verilog "D:/projects/rgbmatrixpanel_cpld/hardware/spi_to_rgbmatrixpanel.v"
+add_file -verilog "D:/projects/rgbmatrixpanelcpld-photonbackpack/hardware/rgbmatrixpanel_cpld.h"
+add_file -verilog "D:/projects/rgbmatrixpanelcpld-photonbackpack/hardware/spi_to_rgbmatrixpanel.v"
 
 
 
 #implementation: "hardware"
-impl -add D:\projects\rgbmatrixpanel_cpld\hardware -type fpga
+impl -add D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware -type fpga
 
 #
 #implementation attributes
@@ -57,8 +57,8 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "D:/projects/rgbmatrixpanel_cpld/hardware/SPI_to_RGBMatrixPanel.edi"
+project -result_file "D:/projects/rgbmatrixpanelcpld-photonbackpack/hardware/SPI_to_RGBMatrixPanel.edi"
 
 #set log file 
-set_option log_file "D:/projects/rgbmatrixpanel_cpld/hardware/spi_to_rgbmatrixpanel.srf" 
+set_option log_file "D:/projects/rgbmatrixpanelcpld-photonbackpack/hardware/spi_to_rgbmatrixpanel.srf" 
 impl -active "hardware"
