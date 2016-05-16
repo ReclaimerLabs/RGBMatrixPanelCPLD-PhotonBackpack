@@ -1,36 +1,50 @@
 #$ TOOL ispLEVER Classic 2.0.00.17.20.15
-#$ DATE Fri May 13 00:40:36 2016
+#$ DATE Sun May 15 22:41:33 2016
 #$ MODULE rgbmatrixpanel_cpld
-#$ PINS 17 si clk reset rgbs_7_ rgbs_6_ rgbs_5_ row_3_ rgbs_4_ rgbs_3_ rgbs_2_ rgbs_1_ \
-#  clk_out rgbs_0_ latch_out row_2_ row_1_ row_0_
-#$ NODES 5 counter_0_ counter_1_ counter_2_ inst_latch_needed row_inc_needed
+#$ PINS 17 si clk reset rgbs_6_ rgbs_7_ rgbs_5_ rgbs_4_ row_3_ rgbs_3_ rgbs_2_ rgbs_1_ \
+#  rgbs_0_ clk_out row_2_ latch_out row_1_ row_0_
+#$ NODES 4 counter_0_ counter_1_ counter_2_ inst_latch_needed
 .model spi_to_rgbmatrixpanel
 .inputs si.BLIF clk.BLIF reset.BLIF counter_0_.Q counter_1_.Q counter_2_.Q \
-inst_latch_needed.Q row_inc_needed.Q rgbs_0_.Q rgbs_1_.Q rgbs_2_.Q rgbs_3_.Q \
-rgbs_4_.Q rgbs_5_.Q rgbs_6_.Q rgbs_7_.Q row_0_.Q row_1_.Q row_2_.Q row_3_.Q
-.outputs rgbs_6_.C rgbs_6_.AR rgbs_7_.C rgbs_7_.AR row_1_.CE row_1_.C \
-row_1_.AP row_2_.CE row_2_.C row_2_.AP row_3_.CE row_3_.C row_3_.AP rgbs_0_.C \
-rgbs_0_.AR rgbs_1_.C rgbs_1_.AR rgbs_2_.C rgbs_2_.AR rgbs_3_.C rgbs_3_.AR \
-rgbs_4_.C rgbs_4_.AR rgbs_5_.C rgbs_5_.AR counter_0_.C counter_0_.AR \
+inst_latch_needed.Q rgbs_0_.Q rgbs_1_.Q rgbs_2_.Q rgbs_3_.Q rgbs_4_.Q \
+rgbs_5_.Q rgbs_6_.Q rgbs_7_.Q row_0_.Q row_1_.Q row_2_.Q row_3_.Q
+.outputs rgbs_7_.C rgbs_7_.AR row_1_.CE row_1_.C row_1_.AP row_2_.CE row_2_.C \
+row_2_.AP row_3_.CE row_3_.C row_3_.AP rgbs_0_.C rgbs_0_.AR rgbs_1_.C \
+rgbs_1_.AR rgbs_2_.C rgbs_2_.AR rgbs_3_.C rgbs_3_.AR rgbs_4_.C rgbs_4_.AR \
+rgbs_5_.C rgbs_5_.AR rgbs_6_.C rgbs_6_.AR counter_0_.C counter_0_.AR \
 counter_1_.C counter_1_.AR counter_2_.C counter_2_.AR row_0_.CE row_0_.C \
-row_0_.AP latch_out.C latch_out.AR clk_out.C clk_out.AR row_inc_needed.C \
-row_inc_needed.AR inst_latch_needed.CE inst_latch_needed.C \
-inst_latch_needed.AR counter_0_.D counter_1_.D counter_2_.D \
-inst_latch_needed.D row_inc_needed.D rgbs_0_.D rgbs_1_.D rgbs_2_.D rgbs_3_.D \
+row_0_.AP latch_out.C latch_out.AR clk_out.C clk_out.AR inst_latch_needed.CE \
+inst_latch_needed.C inst_latch_needed.AR counter_0_.D counter_1_.D \
+counter_2_.D inst_latch_needed.D rgbs_0_.D rgbs_1_.D rgbs_2_.D rgbs_3_.D \
 rgbs_4_.D rgbs_5_.D rgbs_6_.D rgbs_7_.D row_0_.D row_1_.D row_2_.D row_3_.D \
 clk_out.D latch_out.D
-.names reset.BLIF rgbs_6_.AR
-0 1
-1 0
 .names reset.BLIF rgbs_7_.AR
 0 1
 1 0
+.names counter_0_.Q counter_1_.Q counter_2_.Q rgbs_7_.Q row_1_.CE
+0001 1
+--1- 0
+-1-- 0
+1--- 0
+---0 0
 .names reset.BLIF row_1_.AP
 0 1
 1 0
+.names counter_0_.Q counter_1_.Q counter_2_.Q rgbs_7_.Q row_2_.CE
+0001 1
+--1- 0
+-1-- 0
+1--- 0
+---0 0
 .names reset.BLIF row_2_.AP
 0 1
 1 0
+.names counter_0_.Q counter_1_.Q counter_2_.Q rgbs_7_.Q row_3_.CE
+0001 1
+--1- 0
+-1-- 0
+1--- 0
+---0 0
 .names reset.BLIF row_3_.AP
 0 1
 1 0
@@ -52,6 +66,9 @@ clk_out.D latch_out.D
 .names reset.BLIF rgbs_5_.AR
 0 1
 1 0
+.names reset.BLIF rgbs_6_.AR
+0 1
+1 0
 .names reset.BLIF counter_0_.AR
 0 1
 1 0
@@ -61,6 +78,12 @@ clk_out.D latch_out.D
 .names reset.BLIF counter_2_.AR
 0 1
 1 0
+.names counter_0_.Q counter_1_.Q counter_2_.Q rgbs_7_.Q row_0_.CE
+0001 1
+--1- 0
+-1-- 0
+1--- 0
+---0 0
 .names reset.BLIF row_0_.AP
 0 1
 1 0
@@ -76,9 +99,6 @@ clk_out.D latch_out.D
 .names reset.BLIF clk_out.AR
 0 1
 1 0
-.names reset.BLIF row_inc_needed.AR
-0 1
-1 0
 .names counter_0_.Q counter_1_.Q counter_2_.Q rgbs_6_.Q inst_latch_needed.CE
 --1- 1
 -1-- 1
@@ -91,25 +111,13 @@ clk_out.D latch_out.D
 .names reset.BLIF inst_latch_needed.AR
 0 1
 1 0
-.names clk.BLIF rgbs_6_.C
-1 1
-0 0
 .names clk.BLIF rgbs_7_.C
-1 1
-0 0
-.names row_inc_needed.Q row_1_.CE
 1 1
 0 0
 .names clk.BLIF row_1_.C
 1 1
 0 0
-.names row_inc_needed.Q row_2_.CE
-1 1
-0 0
 .names clk.BLIF row_2_.C
-1 1
-0 0
-.names row_inc_needed.Q row_3_.CE
 1 1
 0 0
 .names clk.BLIF row_3_.C
@@ -133,6 +141,9 @@ clk_out.D latch_out.D
 .names clk.BLIF rgbs_5_.C
 1 1
 0 0
+.names clk.BLIF rgbs_6_.C
+1 1
+0 0
 .names clk.BLIF counter_0_.C
 1 1
 0 0
@@ -142,13 +153,7 @@ clk_out.D latch_out.D
 .names clk.BLIF counter_2_.C
 1 1
 0 0
-.names row_inc_needed.Q row_0_.CE
-1 1
-0 0
 .names clk.BLIF row_0_.C
-1 1
-0 0
-.names clk.BLIF row_inc_needed.C
 1 1
 0 0
 .names counter_0_.Q counter_0_.D
@@ -171,12 +176,6 @@ clk_out.D latch_out.D
 -1- 0
 1-- 0
 --1 0
-.names counter_0_.Q counter_1_.Q counter_2_.Q rgbs_7_.Q row_inc_needed.D
-0001 1
---1- 0
--1-- 0
-1--- 0
----0 0
 .names si.BLIF rgbs_0_.D
 1 1
 0 0

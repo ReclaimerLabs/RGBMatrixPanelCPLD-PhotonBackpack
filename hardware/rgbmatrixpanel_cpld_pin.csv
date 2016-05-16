@@ -1,7 +1,7 @@
  ispLEVER Classic 2.0.00.17.20.15 Fitter Report File 
 Project Name,rgbmatrixpanel_cpld
 Project Path,D:\Projects\RGBMatrixPanelCPLD-PhotonBackpack\hardware
-Project Fitted on,Fri May 13 00:40:37 2016
+Project Fitted on,Sun May 15 22:41:34 2016
 
 Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name
 1,TDI,-,,,,,
@@ -44,7 +44,7 @@ Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name
 38,I_O/OE,1,B15,,,,
 39,INCLK0,0,,,,,
 40,I_O/OE,0,A0,*,LVCMOS18,Input,clk
-41,I_O,0,A1,,LVCMOS18,Output,rgbs_7_
+41,I_O,0,A1,,LVCMOS18,Output,rgbs_6_
 42,I_O,0,A2,*,LVCMOS18,Input,si
 43,I_O,0,A3,*,LVCMOS18,Input,reset
-44,I_O,0,A4,,LVCMOS18,Output,rgbs_6_
+44,I_O,0,A4,,LVCMOS18,Output,rgbs_7_

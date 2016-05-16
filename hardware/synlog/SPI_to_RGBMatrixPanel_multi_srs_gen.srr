@@ -1,11 +1,10 @@
 Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
-File C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe changed - recompiling
-File D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs changed - recompiling
+File D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri May 13 00:40:30 2016
+# Sun May 15 22:41:28 2016
 
 ###########################################################]

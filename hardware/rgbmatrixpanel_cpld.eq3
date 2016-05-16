@@ -70,20 +70,20 @@ rgbs_7_.AR = !reset ; (1 pterm, 1 signal)
 
 row_0_.D = !row_0_.Q ; (1 pterm, 1 signal)
 row_0_.C = clk ; (1 pterm, 1 signal)
-row_0_.CE = row_inc_needed.Q ; (1 pterm, 1 signal)
+row_0_.CE = rgbs_7_.Q & !counter_0_.Q & !counter_1_.Q & !counter_2_.Q ; (1 pterm, 4 signals)
 row_0_.AP = !reset ; (1 pterm, 1 signal)
 
 row_1_.D = !row_1_.Q & row_0_.Q
     # row_1_.Q & !row_0_.Q ; (2 pterms, 2 signals)
 row_1_.C = clk ; (1 pterm, 1 signal)
-row_1_.CE = row_inc_needed.Q ; (1 pterm, 1 signal)
+row_1_.CE = rgbs_7_.Q & !counter_0_.Q & !counter_1_.Q & !counter_2_.Q ; (1 pterm, 4 signals)
 row_1_.AP = !reset ; (1 pterm, 1 signal)
 
 row_2_.D = !row_2_.Q & row_1_.Q & row_0_.Q
     # row_2_.Q & !row_1_.Q
     # row_2_.Q & !row_0_.Q ; (3 pterms, 3 signals)
 row_2_.C = clk ; (1 pterm, 1 signal)
-row_2_.CE = row_inc_needed.Q ; (1 pterm, 1 signal)
+row_2_.CE = rgbs_7_.Q & !counter_0_.Q & !counter_1_.Q & !counter_2_.Q ; (1 pterm, 4 signals)
 row_2_.AP = !reset ; (1 pterm, 1 signal)
 
 row_3_.D = !row_3_.Q & row_2_.Q & row_1_.Q & row_0_.Q
@@ -91,10 +91,6 @@ row_3_.D = !row_3_.Q & row_2_.Q & row_1_.Q & row_0_.Q
     # row_3_.Q & !row_1_.Q
     # row_3_.Q & !row_0_.Q ; (4 pterms, 4 signals)
 row_3_.C = clk ; (1 pterm, 1 signal)
-row_3_.CE = row_inc_needed.Q ; (1 pterm, 1 signal)
+row_3_.CE = rgbs_7_.Q & !counter_0_.Q & !counter_1_.Q & !counter_2_.Q ; (1 pterm, 4 signals)
 row_3_.AP = !reset ; (1 pterm, 1 signal)
-
-row_inc_needed.D = rgbs_7_.Q & !counter_0_.Q & !counter_1_.Q & !counter_2_.Q ; (1 pterm, 4 signals)
-row_inc_needed.C = clk ; (1 pterm, 1 signal)
-row_inc_needed.AR = !reset ; (1 pterm, 1 signal)
 

@@ -1,9 +1,9 @@
 C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware  -part LC4064B  -package T44C  -grade -2.5   -ispmach4s -RWCheckOnRam 1 -areadelay 0 -minc -auto_constrain_io -summaryfile D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synlog\report\SPI_to_RGBMatrixPanel_fpga_mapper.xml -top_level_module  SPI_to_RGBMatrixPanel  -multisrs  -ta_num_paths 3  -ta_num_points 0  -oedif  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.edi  -freq 200.000  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMatrixPanel_mult.srs  -ologparam  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\syntmp\SPI_to_RGBMatrixPanel.plg  -osyn  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.srm  -prjdir  d:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\  -prjname  SPI_to_RGBMatrixPanel  -log  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synlog\SPI_to_RGBMatrixPanel_fpga_mapper.srr 
 rc:0 success:1
-D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.edi|o|1463125232|21487
-D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMatrixPanel_mult.srs|i|1463125232|2607
-D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\syntmp\SPI_to_RGBMatrixPanel.plg|o|1463125232|0
-D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.srm|o|1463125232|11341
-D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synlog\SPI_to_RGBMatrixPanel_fpga_mapper.srr|o|1463125232|1501
+D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.edi|o|1463377290|21065
+D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMatrixPanel_mult.srs|i|1463377290|2549
+D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\syntmp\SPI_to_RGBMatrixPanel.plg|o|1463377290|0
+D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.srm|o|1463377290|11140
+D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synlog\SPI_to_RGBMatrixPanel_fpga_mapper.srr|o|1463377290|1501
 C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399398084|7067648
 C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399400922|8049664

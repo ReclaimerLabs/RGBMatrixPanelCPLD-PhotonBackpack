@@ -18,9 +18,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>D:\Projects\RGBMatrixPanel_CPLD\hardware\rgbmatrixpanel_cpld.jed</File>
-			<FileTime>11/22/15 01:10:48</FileTime>
-			<JedecChecksum>0x03DC</JedecChecksum>
+			<File>D:\Projects\RGBMatrixPanelCPLD-PhotonBackpack\hardware\rgbmatrixpanel_cpld.jed</File>
+			<FileTime>05/15/16 22:41:34</FileTime>
+			<JedecChecksum>0x020C</JedecChecksum>
 			<Operation>Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -30,7 +30,7 @@
 				<OverideUES value="TRUE"/>
 				<DebugMode value="TRUE"/>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
-				<SVFProcessor>SVF Processor</SVFProcessor>
+				<SVFProcessor>ispVM</SVFProcessor>
 				<Usercode>0xFFFFFFFF</Usercode>
 				<AccessMode>JTAG</AccessMode>
 			</Option>
@@ -53,6 +53,5 @@
 	</ProjectOptions>
 	<USBOptions>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID> A Location 0000 Serial @úÿ©úÿ©úÿ©úÿ A</USBID>
 	</USBOptions>
 </ispXCF>

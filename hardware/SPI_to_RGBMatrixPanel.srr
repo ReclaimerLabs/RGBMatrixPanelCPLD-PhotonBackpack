@@ -6,7 +6,7 @@
 #Implementation: hardware
 
 $ Start of Compile
-#Fri May 13 00:40:28 2016
+#Sun May 15 22:41:26 2016
 
 Synopsys Verilog Compiler, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
@@ -20,7 +20,6 @@ Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated document
 @I::"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\rgbmatrixpanel_cpld.h"
 @I::"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v"
 Verilog syntax check successful!
-Options changed - recompiling
 Selecting top level module SPI_to_RGBMatrixPanel
 @N: CG364 :"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v":1:7:1:27|Synthesizing module SPI_to_RGBMatrixPanel
 
@@ -29,18 +28,17 @@ Selecting top level module SPI_to_RGBMatrixPanel
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri May 13 00:40:29 2016
+# Sun May 15 22:41:26 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
-File C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe changed - recompiling
-File D:\projects\rgbmatrixpanel_cpld\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs changed - recompiling
+File D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri May 13 00:40:30 2016
+# Sun May 15 22:41:28 2016
 
 ###########################################################]
 Map & Optimize Report
@@ -55,7 +53,7 @@ Product Version I-2014.03LC
 Resource Usage Report
 
 Simple gate primitives:
-DFFRH           14 uses
+DFFRH           13 uses
 DFFCSH          4 uses
 DFFCRH          1 use
 IBUF            3 uses
@@ -72,6 +70,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 102MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri May 13 00:40:31 2016
+# Sun May 15 22:41:28 2016
 
 ###########################################################]

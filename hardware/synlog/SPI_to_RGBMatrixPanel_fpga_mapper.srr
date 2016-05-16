@@ -8,7 +8,7 @@ Product Version I-2014.03LC
 Resource Usage Report
 
 Simple gate primitives:
-DFFRH           14 uses
+DFFRH           13 uses
 DFFCSH          4 uses
 DFFCRH          1 use
 IBUF            3 uses
@@ -25,6 +25,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 102MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri May 13 00:40:31 2016
+# Sun May 15 22:41:28 2016
 
 ###########################################################]

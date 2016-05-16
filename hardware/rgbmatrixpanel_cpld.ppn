@@ -2,7 +2,7 @@
 // Software Version :  ispLEVER Classic 2.0.00.17.20.15  
 // Project Name	    :  rgbmatrixpanel_cpld
 // Targeted Device  :  LC4032V-75T44C
-// Date             :  Fri May 13 00:40:37 2016
+// Date             :  Sun May 15 22:41:34 2016
 //
                    GNDIO0          SYS           5
                    VCCIO0          SYS           6
@@ -25,7 +25,7 @@
                       GND          SYS           34
                    row_3_          OUT           35
                       clk          IN            40
-                  rgbs_7_          OUT           41
+                  rgbs_6_          OUT           41
                        si          IN            42
                     reset          IN            43
-                  rgbs_6_          OUT           44
+                  rgbs_7_          OUT           44
