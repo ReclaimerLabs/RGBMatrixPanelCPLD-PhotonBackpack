@@ -1,8 +1,8 @@
 [WINDOWS]
-MAIN_WINDOW_POSITION=0,0,1920,1080
-LEFT_PANE_WIDTH=634
+MAIN_WINDOW_POSITION=-1688,-8,8,1058
+LEFT_PANE_WIDTH=107
 CHILD_FRAME_STATE=Maximal
-CHILD_WINDOW_SIZE=1920,855
+CHILD_WINDOW_SIZE=1696,840
 CHILD_WINDOW_POS=-8,-30
 [GUI SETTING]
 Remember_Setting=1
@@ -18,13 +18,13 @@ Sort_Type=0
 Sort_Direction=0
 Skip_Next_Pin=0
 [Pin Attributes]
-sort_column_-1=Signal/Group Name
+sort_column_1=Signal/Group Name
 Type=42,no
 Signal/Group Name=103,no
 Group Members=111,no
 GLB=36,no
 Macrocell=73,no
-Pin=32,no
+Pin=90,no
 Bank=42,no
 IO Types=66,no
 Slewrate=64,no

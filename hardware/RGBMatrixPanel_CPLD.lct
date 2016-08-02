@@ -12,8 +12,8 @@ EN_PinMacrocell = yes;
 
 [Revision]
 Parent = lc4k32v.lci;
-DATE = 11/22/2015;
-TIME = 01:10:35;
+DATE = 07/28/2016;
+TIME = 23:30:06;
 Source_Format = Pure_Verilog_HDL;
 Synthesis = Synplify;
 
@@ -27,21 +27,21 @@ Synthesis = Synplify;
 
 [Location Assignments]
 layer = OFF;
-clk = Pin, 40, -, A, 0;
-reset = Pin, 43, -, A, 3;
-si = Pin, 42, -, A, 2;
-clk_out = Pin, 25, -, B, 6;
-latch_out = Pin, 26, -, B, 7;
-rgbs_0_ = Pin, 24, -, B, 5;
-rgbs_1_ = Pin, 22, -, B, 4;
-rgbs_2_ = Pin, 21, -, B, 3;
-rgbs_3_ = Pin, 20, -, B, 2;
-rgbs_4_ = Pin, 19, -, B, 1;
-rgbs_5_ = Pin, 18, -, B, 0;
-row_0_ = Pin, 29, -, B, 8;
-row_1_ = Pin, 30, -, B, 9;
-row_2_ = Pin, 31, -, B, 10;
-row_3_ = Pin, 35, -, B, 12;
+clk = Pin, 37, -, B, 14;
+reset = Pin, 36, -, B, 13;
+si = Pin, 39, -, -, -;
+clk_out = Pin, 19, -, B, 1;
+latch_out = Pin, 20, -, B, 2;
+rgbs_0_ = Pin, 13, -, A, 12;
+rgbs_1_ = Pin, 9, -, A, 10;
+rgbs_2_ = Pin, 8, -, A, 9;
+rgbs_3_ = Pin, 7, -, A, 8;
+rgbs_4_ = Pin, 4, -, A, 7;
+rgbs_5_ = Pin, 3, -, A, 6;
+row_0_ = Pin, 14, -, A, 13;
+row_1_ = Pin, 15, -, A, 14;
+row_2_ = Pin, 16, -, A, 15;
+row_3_ = Pin, 18, -, B, 0;
 
 [Group Assignments]
 layer = OFF;

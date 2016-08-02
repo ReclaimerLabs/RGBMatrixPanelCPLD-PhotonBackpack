@@ -6,7 +6,7 @@
 #Implementation: hardware
 
 $ Start of Compile
-#Sun May 15 22:41:26 2016
+#Tue Jun 28 00:15:39 2016
 
 Synopsys Verilog Compiler, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
@@ -20,6 +20,7 @@ Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated document
 @I::"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\rgbmatrixpanel_cpld.h"
 @I::"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v"
 Verilog syntax check successful!
+File D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v changed - recompiling
 Selecting top level module SPI_to_RGBMatrixPanel
 @N: CG364 :"D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v":1:7:1:27|Synthesizing module SPI_to_RGBMatrixPanel
 
@@ -28,7 +29,7 @@ Selecting top level module SPI_to_RGBMatrixPanel
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun May 15 22:41:26 2016
+# Tue Jun 28 00:15:39 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
@@ -38,6 +39,6 @@ File D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMa
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun May 15 22:41:28 2016
+# Tue Jun 28 00:15:41 2016
 
 ###########################################################]

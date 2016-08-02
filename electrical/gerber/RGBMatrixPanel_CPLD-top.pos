@@ -1,0 +1,18 @@
+### Module positions - created on 7/5/2016 23:18:37 ###
+### Printed by Pcbnew version kicad 4.0.1-stable
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref    Val                  Package         PosX       PosY        Rot     Side
+C3       100uF            c_elec_6.3x5.7    -13.9700   -10.1600     180.0    top
+C4       100uF            c_elec_6.3x5.7    -13.9700   -17.7800     180.0    top
+C5       10uF             C_0805            -21.5900   -10.1600      90.0    top
+C6       0.1uF            C_0603            -12.7000    -3.8100     270.0    top
+C7       0.1uF            C_0603             -7.6200    -3.8100     270.0    top
+C8       0.1uF            C_0603            -45.7200    24.7650     180.0    top
+C9       0.1uF            C_0603            -12.7000    13.9700      90.0    top
+C10      0.1uF            C_0603            -16.5100    13.9700      90.0    top
+D1       D_Schottky       SMini2-F5-B       -44.4500   -17.7800     180.0    top
+Q1       Photo_Trans      Photo_Trans_0805  -30.4800    24.1300     180.0    top
+R1       100R             R_0603            -45.7200    22.8600       0.0    top
+R2       10k              R_0603            -26.6700    24.1300       0.0    top
+## End

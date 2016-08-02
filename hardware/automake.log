@@ -1,10 +1,26 @@
 ispLEVER Auto-Make Log File
 ---------------------------
 
-Updating: Hierarchy
+Updating: Fit Design
 Start to record tcl script...
 Finished recording TCL script.
 
-Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\vlog2jhd.exe spi_to_rgbmatrixpanel.v -p "C:\ispLEVER_Classic2_0\ispcpld/generic" -predefine rgbmatrixpanel_cpld.h'
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\lpf4k.exe @"rgbmatrixpanel_cpld.rs2"'
 
+Project 'rgbmatrixpanel_cpld' was Fitted Successfully!
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\tda.exe -i rgbmatrixpanel_cpld.bl5 -o rgbmatrixpanel_cpld.tda -lci rgbmatrixpanel_cpld.lct -dev m4s_32_30 -family lc4k -mod SPI_to_RGBMatrixPanel -ovec NoInput.tmv -err tda.err -gui'
+
+TDA  - Timing Driven Analyze 
+Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+
+TDA complete - Time 1 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\synsvf.exe -exe "C:\ispLEVER_Classic2_0\ispvmsystem/ispufw" -prj rgbmatrixpanel_cpld -if rgbmatrixpanel_cpld.jed -j2s -log rgbmatrixpanel_cpld.svl -gui'
+
+Need not generate svf file according to the constraints, exit
 Done: completed successfully.

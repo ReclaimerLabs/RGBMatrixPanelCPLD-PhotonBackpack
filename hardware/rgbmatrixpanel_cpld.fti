@@ -1,5 +1,5 @@
 #PLAFILE     rgbmatrixpanel_cpld.bl5
-#DATE        Sun May 15 22:41:34 2016
+#DATE        Thu Jul 28 23:35:23 2016
 
 #DESIGN      rgbmatrixpanel_cpld
 #DEVICE      MACH4S-32
@@ -10,27 +10,27 @@ DATA GLOBAL tINDIO:0
 
 
 // Signal locations
-DATA LOCATION si:A_*_42
-DATA LOCATION clk:A_*_40
-DATA LOCATION reset:A_*_43
-DATA LOCATION rgbs_6_:A_7_41
-DATA LOCATION rgbs_7_:A_9_44
-DATA LOCATION rgbs_5_:B_2_18
-DATA LOCATION rgbs_4_:B_3_19
-DATA LOCATION row_3_:B_0_35
-DATA LOCATION rgbs_3_:B_4_20
-DATA LOCATION rgbs_2_:B_5_21
-DATA LOCATION rgbs_1_:B_10_22
-DATA LOCATION rgbs_0_:B_12_24
-DATA LOCATION clk_out:B_6_25
-DATA LOCATION row_2_:B_1_31
-DATA LOCATION latch_out:B_7_26
-DATA LOCATION row_1_:B_9_30
-DATA LOCATION row_0_:B_8_29
+DATA LOCATION si:*_*_39
+DATA LOCATION clk:B_*_37
+DATA LOCATION reset:B_*_36
+DATA LOCATION rgbs_6_:A_5_40
+DATA LOCATION rgbs_7_:B_12_24
+DATA LOCATION rgbs_5_:A_6_3
+DATA LOCATION rgbs_4_:A_7_4
+DATA LOCATION row_3_:B_1_18
+DATA LOCATION rgbs_3_:A_8_7
+DATA LOCATION rgbs_2_:A_9_8
+DATA LOCATION rgbs_1_:A_10_9
+DATA LOCATION rgbs_0_:A_3_13
+DATA LOCATION clk_out:B_3_19
+DATA LOCATION row_2_:A_0_16
+DATA LOCATION latch_out:B_5_20
+DATA LOCATION row_1_:A_1_15
+DATA LOCATION row_0_:A_2_14
 DATA LOCATION counter_0_:A_12
-DATA LOCATION counter_1_:A_5
-DATA LOCATION counter_2_:A_3
-DATA LOCATION inst_latch_needed:A_1
+DATA LOCATION counter_1_:B_9
+DATA LOCATION counter_2_:A_4
+DATA LOCATION inst_latch_needed:B_7
 
 // Signals direction
 DATA IO_DIR si:IN
@@ -92,6 +92,10 @@ DATA tBSR inst_latch_needed.AR
 DATA tBLA counter_2_:1
 DATA tBLA counter_1_:1
 DATA tBLA counter_0_:1
+DATA tBLA row_0_:1
+DATA tBLA row_1_:1
+DATA tBLA row_2_:1
+DATA tBLA rgbs_7_:1
 DATA tBLA clk:1
 DATA tBLA reset:1
 

@@ -1,30 +1,28 @@
 Reference, Value, Footprint, Datasheet, DNP, Manufacturer, Manufacturer Part Number, Supplier 1, Supplier 1 Part Number
-U1,PHOTON,Jason_Libraries:PHOTON,,DNP,,,,
-U2,LC4032V-44TQFP,Jason_Libraries:QFP_44,,,Lattice,LC4032V-75TN44C,Digikey,220-1034-ND
-J5,CONN_02X08,Jason_Libraries:HEADER_THRU_02x08_POL,,,Sullins,SFH11-PBPC-D08-ST-BK,Supplier Part Number,S9196-ND
-J8,CONN_01X08,Jason_Libraries:HEADER_THRU_01x08,,,Sullins,PRPC008SAAN-RC,Digikey,S1011EC-08-ND
-C5,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R9BB103,Digikey,311-1085-1-ND
-BZ1,PKMCS0909E4000-R1,Jason_Libraries:PKMCS0909E4000-R1,,,Murata,PKMCS0909E4000-R1,Digikey,490-9647-1-ND
+U1,PHOTON,Reclaimer_Labs:PHOTON,,DNP,,,,
+U2,LC4032V-44TQFP,Reclaimer_Labs:QFP_44,,,Lattice,LC4032V-75TN44C,Digikey,220-1034-ND
+J7,CONN_02X08,Reclaimer_Labs:HEADER_THRU_02x08_POL,,,Sullins,SFH11-PBPC-D08-ST-BK,Digikey,S9196-ND
+C9,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R9BB103,Digikey,311-1085-1-ND
 R2,10k,Resistors_SMD:R_0603,,,Samsung,RC1608F103CS,Digikey,1276-3485-1-ND
-D1,ZENER,Diodes_SMD:SOD-123,,,Diodes Inc,MMSZ5231B-7-F,Digikey,MMSZ5231B-FDICT-ND
-U3,TSOP75238TT,Jason_Libraries:TSOP75238TT,,,Vishay,TSOP75238TR,Digikey,TSOP75238CT-ND
-C4,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R7BB104,Digikey,311-1088-1-ND
+U3,TSOP75238TT,Reclaimer_Labs:TSOP75238TT,,,Vishay,TSOP75238TR,Digikey,TSOP75238CT-ND
+C8,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R7BB104,Digikey,311-1088-1-ND
 R1,100R,Resistors_SMD:R_0603,,,Samsung,RC1608F101CS,Digikey,1276-3482-1-ND
-J7,BARREL_JACK,Connect:BARREL_JACK,,,CUI,PJ-202AH,Digikey,CP-202AH-ND
-J1,CONN_01X04,Jason_Libraries:VH_THRU_01x04_RA,,,JST,B4PS-VH(LF)(SN),Digikey,455-1650-ND
-C1,10uF,Capacitors_SMD:C_0805,,,Yageo,CC0805KKX5R6BB106,Digikey,311-1460-1-ND
-J4,CONN_02X06,Jason_Libraries:HEADER_THRU_02x06,,DNP,,,,
-Q1,Photo_Trans,Jason_Libraries:Photo_Trans_0805,,,Rohm,RPM-075PTT86,Digikey,511-1356-1-ND
-D2,ZENER,Diodes_SMD:SOD-123,,,Diodes Inc,MMSZ5231B-7-F,Digikey,MMSZ5231B-FDICT-ND
-C2,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R7BB104,Digikey,311-1088-1-ND
-C3,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R7BB104,Digikey,311-1088-1-ND
-C6,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R9BB103,Digikey,311-1085-1-ND
-J2,CONN_01X04,Jason_Libraries:VH_THRU_01x04_RA,,,JST,B4PS-VH(LF)(SN),Digikey,455-1650-ND
-J3,CONN_01X04,Jason_Libraries:VH_THRU_01x04_RA,,,JST,B4PS-VH(LF)(SN),Digikey,455-1650-ND
-J6,CONN_01X04,Jason_Libraries:VH_THRU_01x04_RA,,,JST,B4PS-VH(LF)(SN),Digikey,455-1650-ND
-X3,MTHOLE,Mounting_Holes:MountingHole_3-5mm,
-X4,MTHOLE,Mounting_Holes:MountingHole_3-5mm,
-X1,MTHOLE,Mounting_Holes:MountingHole_3-5mm,
-X2,MTHOLE,Mounting_Holes:MountingHole_3-5mm,
-J9,CONN_02X06,Jason_Libraries:HEADER_THRU_02x06,,DNP,,,,
-C7,100uF,Jason_Libraries:c_elec_6.3x7.7,,,Nichicon,UWX1A101MCL1GB,Digikey,493-2096-1-ND
+J1,BARREL_JACK,Reclaimer_Labs:BARREL_JACK_MPD_EJ508A,,,CUI,PJ-202AH,Digikey,CP-202AH-ND
+Q1,Photo_Trans,Reclaimer_Labs:Photo_Trans_0805,,,Rohm,RPM-075PTT86,Digikey,511-1356-1-ND
+C6,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R7BB104,Digikey,311-1088-1-ND
+C7,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R7BB104,Digikey,311-1088-1-ND
+C10,0.1uF,Capacitors_SMD:C_0603,,,Yageo,CC0603KRX7R9BB103,Digikey,311-1085-1-ND
+X3,MTHOLE,Reclaimer_Labs:MountingHole_3.5mm_Pad_Via,
+X4,MTHOLE,Reclaimer_Labs:MountingHole_3.5mm_Pad_Via,
+X1,MTHOLE,Mounting_Holes:MountingHole_3.5mm,
+X2,MTHOLE,Mounting_Holes:MountingHole_3.5mm,
+D1,D_Schottky,Reclaimer_Labs:SMini2-F5-B,,,Panasonic,DB2J20900L,Digikey,DB2J20900LCT-ND
+C3,100uF,Capacitors_SMD:c_elec_6.3x5.7,,,Nichicon,UWX1A101MCL1GB,Digikey,493-2096-1-ND
+C4,100uF,Capacitors_SMD:c_elec_6.3x5.7,,,Nichicon,UWX1A101MCL1GB,Digikey,493-2096-1-ND
+C5,10uF,Capacitors_SMD:C_0805,,,Yageo,CC0805KKX5R6BB106,Digikey,311-1460-1-ND
+J2,CONN_01X01,Reclaimer_Labs:3547,,,Keystone,3547,Digikey,36-3547-ND
+J3,CONN_01X01,Reclaimer_Labs:3547,,,Keystone,3547,Digikey,36-3547-ND
+J4,CONN_01X01,Reclaimer_Labs:3547,,,Keystone,3547,Digikey,36-3547-ND
+J5,CONN_01X01,Reclaimer_Labs:3547,,,Keystone,3547,Digikey,36-3547-ND
+J8,CONN_01X06,Socket_Strips:Socket_Strip_Straight_1x06,
+J6,CONN_01X06,Socket_Strips:Socket_Strip_Straight_1x06,

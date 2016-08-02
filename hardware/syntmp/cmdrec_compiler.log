@@ -1,9 +1,9 @@
 C:\ispLEVER_Classic2_0\synpbase\bin64\c_ver.exe  -osyn  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs  -top  SPI_to_RGBMatrixPanel  -prodtype  synplify_pro  -nostructver -I d:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\  -I C:\ispLEVER_Classic2_0\synpbase\lib  -v2001  -encrypt  -pro  -dmgen  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\dm  -compiler_compatible -ui -fid2 -ram -sharing on -ll 2000 -autosm -lib work C:\ispLEVER_Classic2_0\ispcpld\..\cae_library\synthesis\verilog\mach.v -lib work D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\rgbmatrixpanel_cpld.h -lib work D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v -loga  D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.srr 
 rc:0 success:1
-D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs|o|1463377288|2245
+D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\synwork\SPI_to_RGBMatrixPanel_comp.srs|o|1467098140|2243
 C:\ispLEVER_Classic2_0\ispcpld\..\cae_library\synthesis\verilog\mach.v|i|1336534208|12168
 D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\rgbmatrixpanel_cpld.h|i|1448182730|0
-D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v|i|1463377276|1914
-D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.srr|o|1463377288|1662
+D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\spi_to_rgbmatrixpanel.v|i|1463381946|1574
+D:\projects\rgbmatrixpanelcpld-photonbackpack\hardware\SPI_to_RGBMatrixPanel.srr|o|1467098140|1769
 C:\ispLEVER_Classic2_0\synpbase\bin\c_ver.exe|i|1401256250|2292224
 C:\ispLEVER_Classic2_0\synpbase\bin64\c_ver.exe|i|1401256450|5829632

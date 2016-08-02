@@ -14,7 +14,7 @@ Project_Summary
 ~~~~~~~~~~~~~~~
 Project Name         :  rgbmatrixpanel_cpld
 Project Path         :  D:\Projects\RGBMatrixPanelCPLD-PhotonBackpack\hardware
-Project Fitted on    :  Sun May 15 22:41:34 2016
+Project Fitted on    :  Thu Jul 28 23:35:23 2016
 
 Device               :  M4032_30
 Package              :  44
@@ -31,8 +31,8 @@ Source Format        :  Pure_Verilog_HDL
 Compilation_Times
 ~~~~~~~~~~~~~~~~~
 Prefit Time                     0 secs
-Load Design Time                0.00 secs
-Partition Time                  0.02 secs
+Load Design Time                0.05 secs
+Partition Time                  0.00 secs
 Place Time                      0.00 secs
 Route Time                      0.00 secs
 Total Fit Time                  00:00:01
@@ -70,13 +70,13 @@ Device_Resource_Summary
                                  Total    Used   Not Used   Utilization
 -----------------------------------------------------------------------
 Dedicated Pins
-  Clock/Input Pins                  2        0      2    -->     0
+  Clock/Input Pins                  2        1      1    -->    50
   I/O / Enable Pins                 2        1      1    -->    50
-I/O Pins                           28       16     12    -->    57
+I/O Pins                           28       15     13    -->    53
 Logic Functions                    32       18     14    -->    56
   Input Registers                  30        0     30    -->     0
 
-GLB Inputs                         72       24     48    -->    33
+GLB Inputs                         72       28     44    -->    38
 Logical Product Terms             160       35    125    -->    21
 Occupied GLBs                       2        2      0    -->   100
 Macrocells                         32       18     14    -->    56
@@ -113,10 +113,10 @@ GLB_Resource_Summary
 Maximum
   GLB                      36      *(1)     8   --     --             16       80       16
 -------------------------------------------------------------------------------------------
-  GLB    A      1     6     7      4/15     0    6      0             10       11        6
-  GLB    B      8     9    17     12/15     0   12      0              4       24       12
+  GLB    A      8     8    16      9/15     0   12      0              4       20       12
+  GLB    B      6     6    12      6/15     0    6      0             10       15        6
 -------------------------------------------------------------------------------------------
-TOTALS:         9    15    24     16/30     0   18      0             14       35       18
+TOTALS:        14    14    28     15/30     0   18      0             14       35       18
 
 <Note> 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
 <Note> 2 : Four rightmost columns above reflect last status of the placement process.
@@ -131,8 +131,8 @@ GLB_Control_Summary
 Maximum
   GLB        1      1        16     16     16     16     16  
 ==============================================================================
-  GLB    A   1      0         1      1      0      0      0
-  GLB    B   1      0         2      4      0      0      0
+  GLB    A   1      0         0      3      0      0      0
+  GLB    B   1      0         3      2      0      0      0
 ------------------------------------------------------------------------------
 
 <Note> 1 : For ispMACH 4000 devices, the number of output enables depends on the GLB.
@@ -211,48 +211,48 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name
 --------------------------------------------------------------------------------
 1     | TDI   |   -  |    |        |                 |       |
 2     |  I_O  |   0  | A5 |        |                 |       |
-3     |  I_O  |   0  | A6 |        |                 |       |
-4     |  I_O  |   0  | A7 |        |                 |       |
+3     |  I_O  |   0  | A6 |    *   |LVCMOS18         | Output|rgbs_5_
+4     |  I_O  |   0  | A7 |    *   |LVCMOS18         | Output|rgbs_4_
 5     |GNDIO0 |   -  |    |        |                 |       |
 6     |VCCIO0 |   -  |    |        |                 |       |
-7     |  I_O  |   0  | A8 |        |                 |       |
-8     |  I_O  |   0  | A9 |        |                 |       |
-9     |  I_O  |   0  | A10|        |                 |       |
+7     |  I_O  |   0  | A8 |    *   |LVCMOS18         | Output|rgbs_3_
+8     |  I_O  |   0  | A9 |    *   |LVCMOS18         | Output|rgbs_2_
+9     |  I_O  |   0  | A10|    *   |LVCMOS18         | Output|rgbs_1_
 10    | TCK   |   -  |    |        |                 |       |
 11    | VCC   |   -  |    |        |                 |       |
 12    | GND   |   -  |    |        |                 |       |
-13    |  I_O  |   0  | A12|        |                 |       |
-14    |  I_O  |   0  | A13|        |                 |       |
-15    |  I_O  |   0  | A14|        |                 |       |
-16    |  I_O  |   0  | A15|        |                 |       |
+13    |  I_O  |   0  | A12|    *   |LVCMOS18         | Output|rgbs_0_
+14    |  I_O  |   0  | A13|    *   |LVCMOS18         | Output|row_0_
+15    |  I_O  |   0  | A14|    *   |LVCMOS18         | Output|row_1_
+16    |  I_O  |   0  | A15|    *   |LVCMOS18         | Output|row_2_
 17    |INCLK2 |   1  |    |        |                 |       |
-18    |  I_O  |   1  | B0 |    *   |LVCMOS18         | Output|rgbs_5_
-19    |  I_O  |   1  | B1 |    *   |LVCMOS18         | Output|rgbs_4_
-20    |  I_O  |   1  | B2 |    *   |LVCMOS18         | Output|rgbs_3_
-21    |  I_O  |   1  | B3 |    *   |LVCMOS18         | Output|rgbs_2_
-22    |  I_O  |   1  | B4 |    *   |LVCMOS18         | Output|rgbs_1_
+18    |  I_O  |   1  | B0 |    *   |LVCMOS18         | Output|row_3_
+19    |  I_O  |   1  | B1 |    *   |LVCMOS18         | Output|clk_out
+20    |  I_O  |   1  | B2 |    *   |LVCMOS18         | Output|latch_out
+21    |  I_O  |   1  | B3 |        |                 |       |
+22    |  I_O  |   1  | B4 |        |                 |       |
 23    | TMS   |   -  |    |        |                 |       |
-24    |  I_O  |   1  | B5 |    *   |LVCMOS18         | Output|rgbs_0_
-25    |  I_O  |   1  | B6 |    *   |LVCMOS18         | Output|clk_out
-26    |  I_O  |   1  | B7 |    *   |LVCMOS18         | Output|latch_out
+24    |  I_O  |   1  | B5 |        |LVCMOS18         | Output|rgbs_7_
+25    |  I_O  |   1  | B6 |        |                 |       |
+26    |  I_O  |   1  | B7 |        |                 |       |
 27    |GNDIO1 |   -  |    |        |                 |       |
 28    |VCCIO1 |   -  |    |        |                 |       |
-29    |  I_O  |   1  | B8 |    *   |LVCMOS18         | Output|row_0_
-30    |  I_O  |   1  | B9 |    *   |LVCMOS18         | Output|row_1_
-31    |  I_O  |   1  | B10|    *   |LVCMOS18         | Output|row_2_
+29    |  I_O  |   1  | B8 |        |                 |       |
+30    |  I_O  |   1  | B9 |        |                 |       |
+31    |  I_O  |   1  | B10|        |                 |       |
 32    | TDO   |   -  |    |        |                 |       |
 33    | VCC   |   -  |    |        |                 |       |
 34    | GND   |   -  |    |        |                 |       |
-35    |  I_O  |   1  | B12|    *   |LVCMOS18         | Output|row_3_
-36    |  I_O  |   1  | B13|        |                 |       |
-37    |  I_O  |   1  | B14|        |                 |       |
+35    |  I_O  |   1  | B12|        |                 |       |
+36    |  I_O  |   1  | B13|    *   |LVCMOS18         | Input |reset
+37    |  I_O  |   1  | B14|    *   |LVCMOS18         | Input |clk
 38    | I_O/OE|   1  | B15|        |                 |       |
-39    |INCLK0 |   0  |    |        |                 |       |
-40    | I_O/OE|   0  | A0 |    *   |LVCMOS18         | Input |clk
-41    |  I_O  |   0  | A1 |        |LVCMOS18         | Output|rgbs_6_
-42    |  I_O  |   0  | A2 |    *   |LVCMOS18         | Input |si
-43    |  I_O  |   0  | A3 |    *   |LVCMOS18         | Input |reset
-44    |  I_O  |   0  | A4 |        |LVCMOS18         | Output|rgbs_7_
+39    |INCLK0 |   0  |    |    *   |LVCMOS18         | Input |si
+40    | I_O/OE|   0  | A0 |        |LVCMOS18         | Output|rgbs_6_
+41    |  I_O  |   0  | A1 |        |                 |       |
+42    |  I_O  |   0  | A2 |        |                 |       |
+43    |  I_O  |   0  | A3 |        |                 |       |
+44    |  I_O  |   0  | A4 |        |                 |       |
 --------------------------------------------------------------------------------
 
 <Note> GLB Pad : This notation refers to the GLB I/O pad number in the device.
@@ -273,9 +273,9 @@ Input_Signal_List
          Pin    Fanout
  Pin GLB Type         Pullup Signal
 -----------------------------------
-  40   A  I/O   2 AB      Up clk
-  43   A  I/O   2 AB      Up reset
-  42   A  I/O   1 -B      Up si
+  37   B  I/O   2 AB      Up clk
+  36   B  I/O   2 AB      Up reset
+  39  -- INCLK  1 A-      Up si
 -----------------------------------
 
 
@@ -286,20 +286,20 @@ Output_Signal_List
           N         L Mc   R E U C O F B Fanout
  Pin GLB  P LL PTs  S Type E S P E E P P       Slew Pullup Signal
 --------------------------------------------------------------------
-  25   B  5  1   2  1 DFF    * R           --  Fast     Up clk_out
-  26   B  3  1   2  1 DFF    * R           --  Fast     Up latch_out
-  24   B  3  -   1  1 DFF    * R         1 -B  Fast     Up rgbs_0_
-  22   B  3  1   1  1 DFF    * R         1 -B  Fast     Up rgbs_1_
-  21   B  3  1   1  1 DFF    * R         1 -B  Fast     Up rgbs_2_
-  20   B  3  1   1  1 DFF    * R         1 -B  Fast     Up rgbs_3_
-  19   B  3  1   1  1 DFF    * R         1 -B  Fast     Up rgbs_4_
-  18   B  3  1   1  1 DFF    * R         1 A-  Fast     Up rgbs_5_
-  41   A  3  1   1  1 DFF    * R         1 A-  Fast     Up rgbs_6_
-  44   A  3  1   1  1 DFF    * R         1 -B  Fast     Up rgbs_7_
-  29   B  7  1   2  1 DFF  *   S *       1 -B  Fast     Up row_0_
-  30   B  8  1   3  1 DFF  *   S *       1 -B  Fast     Up row_1_
-  31   B  9  1   4  1 DFF  *   S *       1 -B  Fast     Up row_2_
-  35   B 10  1   5  1 DFF  *   S *       1 -B  Fast     Up row_3_
+  19   B  5  1   2  1 DFF    * R           --  Fast     Up clk_out
+  20   B  3  1   2  1 DFF    * R           --  Fast     Up latch_out
+  13   A  3  -   1  1 DFF    * R         1 A-  Fast     Up rgbs_0_
+   9   A  3  1   1  1 DFF    * R         1 A-  Fast     Up rgbs_1_
+   8   A  3  1   1  1 DFF    * R         1 A-  Fast     Up rgbs_2_
+   7   A  3  1   1  1 DFF    * R         1 A-  Fast     Up rgbs_3_
+   4   A  3  1   1  1 DFF    * R         1 A-  Fast     Up rgbs_4_
+   3   A  3  1   1  1 DFF    * R         1 A-  Fast     Up rgbs_5_
+  40   A  3  1   1  1 DFF    * R         1 -B  Fast     Up rgbs_6_
+  24   B  3  1   1  1 DFF    * R         2 AB  Fast     Up rgbs_7_
+  14   A  7  1   2  1 DFF  *   S *       2 AB  Fast     Up row_0_
+  15   A  8  1   3  1 DFF  *   S *       2 AB  Fast     Up row_1_
+  16   A  9  1   4  1 DFF  *   S *       2 AB  Fast     Up row_2_
+  18   B 10  1   5  1 DFF  *   S *       1 -B  Fast     Up row_3_
 --------------------------------------------------------------------
 
 <Note> CLS = Number of clusters used
@@ -345,9 +345,9 @@ Buried_Signal_List
 Mc GLB  P LL PTs  S Type E S P E R P       Signal
 ------------------------------------------------------------
 12   A  3  1   1  1 DFF    * R       2 AB  counter_0_
- 5   A  4  1   2  1 DFF    * R       2 AB  counter_1_
- 3   A  5  1   3  1 DFF    * R       2 AB  counter_2_
- 1   A  6  1   3  1 DFF    * R *     1 -B  inst_latch_needed
+ 9   B  4  1   2  1 DFF    * R       2 AB  counter_1_
+ 4   A  5  1   3  1 DFF    * R       2 AB  counter_2_
+ 7   B  6  1   3  1 DFF    * R *     1 -B  inst_latch_needed
 ------------------------------------------------------------
 
 <Note> CLS = Number of clusters used

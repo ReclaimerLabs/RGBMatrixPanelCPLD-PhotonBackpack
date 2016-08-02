@@ -1,0 +1,27 @@
+### Module positions - created on 7/5/2016 23:20:45 ###
+### Printed by Pcbnew version kicad 4.0.1-stable
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref    Val                  Package         PosX       PosY        Rot     Side
+J1       BARREL_JACK      BARREL_JACK_MPD_  -58.6700   -16.5100       0.0    bottom
+J7       CONN_02X08       HEADER_THRU_02x0    0.0000     0.0000     270.0    bottom
+C3       100uF            c_elec_6.3x5.7    -13.9700   -10.1600     180.0    top
+C4       100uF            c_elec_6.3x5.7    -13.9700   -17.7800     180.0    top
+C5       10uF             C_0805            -21.5900   -10.1600      90.0    top
+C6       0.1uF            C_0603            -12.7000    -3.8100     270.0    top
+C7       0.1uF            C_0603             -7.6200    -3.8100     270.0    top
+C8       0.1uF            C_0603            -45.7200    24.7650     180.0    top
+C9       0.1uF            C_0603            -12.7000    13.9700      90.0    top
+C10      0.1uF            C_0603            -16.5100    13.9700      90.0    top
+D1       D_Schottky       SMini2-F5-B       -44.4500   -17.7800     180.0    top
+G***     LOGO             Reclaimer_Labs2   -24.5110   -17.2720       0.0    top
+J2       CONN_01X01       3547              -57.1500    22.8600       0.0    top
+J3       CONN_01X01       3547              -57.1500    13.9700       0.0    top
+J4       CONN_01X01       3547              -57.1500     5.0800       0.0    top
+J5       CONN_01X01       3547              -57.1500    -3.8100       0.0    top
+Q1       Photo_Trans      Photo_Trans_0805  -30.4800    24.1300     180.0    top
+R1       100R             R_0603            -45.7200    22.8600       0.0    top
+R2       10k              R_0603            -26.6700    24.1300       0.0    top
+U2       LC4032V-44TQFP   QFP_44            -12.7000     5.0800      90.0    top
+U3       TSOP75238TT      TSOP75238TT       -39.3700    25.4000       0.0    top
+## End

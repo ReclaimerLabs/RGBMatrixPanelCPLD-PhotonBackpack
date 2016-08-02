@@ -1,0 +1,16 @@
+Reference	Quantity	 Value	 Footprint	 Datasheet	 DNP	 Manufacturer	 Manufacturer Part Number	 Supplier 1	 Supplier 1 Part Number
+C3 C4	2	100uF	Capacitors_SMD:c_elec_6.3x5.7			Nichicon	UWX1A101MCL1GB	Digikey	493-2096-1-ND
+C5	1	10uF	Capacitors_SMD:C_0805			Yageo	CC0805KKX5R6BB106	Digikey	311-1460-1-ND
+C6 C7 C8 C9 C10	5	0.1uF	Capacitors_SMD:C_0603			Yageo	CC0603KRX7R7BB104	Digikey	311-1088-1-ND
+D1	1	D_Schottky	Reclaimer_Labs:SMini2-F5-B			Panasonic	DB2J20900L	Digikey	DB2J20900LCT-ND
+J1	1	BARREL_JACK	Reclaimer_Labs:BARREL_JACK_MPD_EJ508A			CUI	PJ-202AH	Digikey	CP-202AH-ND
+J2 J3 J4 J5	4	CONN_01X01	3547			Keystone	3547	Digikey	36-3547-ND
+J6	1	CONN_01X06	Socket_Strips:Socket_Strip_Straight_1x06		DNP				
+J7	1	CONN_02X08	Reclaimer_Labs:HEADER_THRU_02x08_POL			Sullins	SFH11-PBPC-D08-ST-BK	Digikey	S9196-ND
+J8	1	CONN_01X06	Socket_Strips:Socket_Strip_Straight_1x06		DNP				
+Q1	1	Photo_Trans	Reclaimer_Labs:Photo_Trans_0805			Rohm	RPM-075PTT86	Digikey	511-1356-1-ND
+R1	1	100R	Resistors_SMD:R_0603			Samsung	RC1608F101CS	Digikey	1276-3482-1-ND
+R2	1	10k	Resistors_SMD:R_0603			Samsung	RC1608F103CS	Digikey	1276-3485-1-ND
+U1	1	PHOTON	Reclaimer_Labs:PHOTON		DNP				
+U2	1	LC4032V-44TQFP	Reclaimer_Labs:QFP_44			Lattice	LC4032V-75TN44C	Digikey	220-1034-ND
+U3	1	TSOP75238TT	Reclaimer_Labs:TSOP75238TT			Vishay	TSOP75238TR	Digikey	TSOP75238CT-ND

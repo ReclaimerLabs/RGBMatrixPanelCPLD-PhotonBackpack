@@ -19,7 +19,7 @@ Section Member   Rename                   Array-Notation          Array Number  
         Port      row_0_                      row[0]                       2            3            
 End
 Section Cross Reference File
-Design 'SPI_to_RGBMatrixPanel' created Sun May 15 22:41:33 2016
+Design 'SPI_to_RGBMatrixPanel' created Tue Jun 28 00:15:46 2016
    Type              New Name                               Original Name
 // ----------------------------------------------------------------------
    Inst           rgbsDFFRH_7_                              rgbsDFFRH[7]
