@@ -19,24 +19,24 @@ Section Member   Rename                   Array-Notation          Array Number  
         Port      row_0_                      row[0]                       2            3            
 End
 Section Cross Reference File
-Design 'SPI_to_RGBMatrixPanel' created Tue Jun 28 00:15:46 2016
+Design 'SPI_to_RGBMatrixPanel' created Sun Feb 05 16:48:17 2017
    Type              New Name                               Original Name
 // ----------------------------------------------------------------------
-   Inst           rgbsDFFRH_7_                              rgbsDFFRH[7]
-   Inst           rowDFFCSH_1_                              rowDFFCSH[1]
-   Inst           rowDFFCSH_2_                              rowDFFCSH[2]
-   Inst           rowDFFCSH_3_                              rowDFFCSH[3]
-   Inst           rgbsDFFRH_0_                              rgbsDFFRH[0]
-   Inst           rgbsDFFRH_1_                              rgbsDFFRH[1]
    Inst           rgbsDFFRH_2_                              rgbsDFFRH[2]
    Inst           rgbsDFFRH_3_                              rgbsDFFRH[3]
    Inst           rgbsDFFRH_4_                              rgbsDFFRH[4]
    Inst           rgbsDFFRH_5_                              rgbsDFFRH[5]
    Inst           rgbsDFFRH_6_                              rgbsDFFRH[6]
+   Inst           rgbsDFFRH_7_                              rgbsDFFRH[7]
+   Inst           rowDFFCSH_0_                              rowDFFCSH[0]
+   Inst           rowDFFCSH_1_                              rowDFFCSH[1]
+   Inst           rowDFFCSH_2_                              rowDFFCSH[2]
+   Inst           rowDFFCSH_3_                              rowDFFCSH[3]
+   Inst           rgbsDFFRH_0_                              rgbsDFFRH[0]
+   Inst           rgbsDFFRH_1_                              rgbsDFFRH[1]
    Inst             counter_0_                                counter[0]
    Inst             counter_1_                                counter[1]
    Inst             counter_2_                                counter[2]
-   Inst           rowDFFCSH_0_                              rowDFFCSH[0]
    Inst                rgbs_0_                                   rgbs[0]
    Inst                rgbs_1_                                   rgbs[1]
    Inst                rgbs_2_                                   rgbs[2]
@@ -53,7 +53,6 @@ Design 'SPI_to_RGBMatrixPanel' created Tue Jun 28 00:15:46 2016
    Inst           counter_i_0_                              counter_i[0]
    Inst           counter_i_1_                              counter_i[1]
    Inst               row_i_0_                                  row_i[0]
-   Inst              rgbs_i_6_                                 rgbs_i[6]
    Net            counter_0__n                                counter[0]
    Net            counter_1__n                                counter[1]
    Net            counter_2__n                                counter[2]
@@ -61,7 +60,6 @@ Design 'SPI_to_RGBMatrixPanel' created Tue Jun 28 00:15:46 2016
    Net          counter_i_1__n                              counter_i[1]
    Net          counter_i_2__n                              counter_i[2]
    Net              row_i_0__n                                  row_i[0]
-   Net             rgbs_i_6__n                                 rgbs_i[6]
    Net             rgbs_c_0__n                                 rgbs_c[0]
    Net               rgbs_0__n                                   rgbs[0]
    Net             rgbs_c_1__n                                 rgbs_c[1]

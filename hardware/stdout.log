@@ -3,7 +3,7 @@ Running in Lattice mode
 
 Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
 Install:     C:\ispLEVER_Classic2_0\synpbase
-Date:        Tue Jun 28 00:15:39 2016
+Date:        Sun Feb 05 16:48:10 2017
 Version:     I-2014.03LC 
 
 Arguments:   -product synplify_pro  -batch d:/projects/rgbmatrixpanelcpld-photonbackpack/hardware\SPI_to_RGBMatrixPanel.prj

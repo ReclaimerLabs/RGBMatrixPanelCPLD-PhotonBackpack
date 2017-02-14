@@ -19,8 +19,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>D:\Projects\RGBMatrixPanelCPLD-PhotonBackpack\hardware\rgbmatrixpanel_cpld.jed</File>
-			<FileTime>05/15/16 22:41:34</FileTime>
-			<JedecChecksum>0x020C</JedecChecksum>
+			<FileTime>01/16/17 23:55:52</FileTime>
+			<JedecChecksum>0xFA33</JedecChecksum>
 			<Operation>Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

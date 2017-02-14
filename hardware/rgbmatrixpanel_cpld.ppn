@@ -2,30 +2,30 @@
 // Software Version :  ispLEVER Classic 2.0.00.17.20.15  
 // Project Name	    :  rgbmatrixpanel_cpld
 // Targeted Device  :  LC4032V-75T44C
-// Date             :  Thu Jul 28 23:35:23 2016
+// Date             :  Sun Feb 05 16:48:18 2017
 //
-                  rgbs_5_          OUT           3
-                  rgbs_4_          OUT           4
                    GNDIO0          SYS           5
                    VCCIO0          SYS           6
-                  rgbs_3_          OUT           7
-                  rgbs_2_          OUT           8
-                  rgbs_1_          OUT           9
                       VCC          SYS           11
                       GND          SYS           12
-                  rgbs_0_          OUT           13
-                   row_0_          OUT           14
-                   row_1_          OUT           15
-                   row_2_          OUT           16
-                   row_3_          OUT           18
-                  clk_out          OUT           19
-                latch_out          OUT           20
-                  rgbs_7_          OUT           24
+                  clk_out          OUT           16
+                latch_out          OUT           18
+                   row_2_          OUT           19
+                   row_3_          OUT           20
+                   row_0_          OUT           21
+                   row_1_          OUT           22
+                  rgbs_0_          OUT           24
+                  rgbs_2_          OUT           25
+                  rgbs_1_          OUT           26
                    GNDIO1          SYS           27
                    VCCIO1          SYS           28
+                  rgbs_3_          OUT           29
+                  rgbs_5_          OUT           30
+                  rgbs_4_          OUT           31
                       VCC          SYS           33
                       GND          SYS           34
                     reset          IN            36
                       clk          IN            37
                        si          IN            39
-                  rgbs_6_          OUT           40
+                  rgbs_7_          OUT           40
+                  rgbs_6_          OUT           42

@@ -18,12 +18,14 @@ module SPI_to_RGBMatrixPanel( si, clk, reset, rgbs, row, clk_out, latch_out );
     reg          clk_out;
     reg          latch_out;
     reg          latch_needed;
+    reg          row_inc_needed;
 
     always @ (negedge clk or negedge reset) begin
         if (reset == 1'b0) begin
-            clk_out <= 1'b0;
+            clk_out <= 1'b1;
             latch_out <= 1'b0;
-            latch_needed <= 1'b0;
+            latch_needed <= 1'b1;
+            row <= 4'd15;
         end else begin
 	        if (counter[2:0] == 3'd0) begin
 		        clk_out <= 1'b1;
@@ -32,12 +34,23 @@ module SPI_to_RGBMatrixPanel( si, clk, reset, rgbs, row, clk_out, latch_out );
                 end
 			end else begin
 			    clk_out <= 1'b0;
-                latch_needed <= 1'b0;
 			end
+
             if (latch_needed == 1'b1) begin
-                latch_out <= 1'b1;
+	            if (counter[2:0] == 3'd2) begin
+	                latch_out <= 1'b1;
+                    latch_needed <= 1'b0;
+	            end else begin
+	                latch_out <= 1'b0;
+	            end
             end else begin
                 latch_out <= 1'b0;
+            end
+            
+            if (row_inc_needed == 1'b1) begin
+	            if (counter[2:0] == 3'd1) begin
+                    row <= row + 1;
+                end
             end
         end
     end
@@ -46,13 +59,16 @@ module SPI_to_RGBMatrixPanel( si, clk, reset, rgbs, row, clk_out, latch_out );
 	    if (reset == 1'b0) begin
             rgbs[7:0] <= 8'b00000000;
             counter <= 3'b000;
-            row <= 4'b1111;
+            row_inc_needed <= 1'b1;
         end else begin
             counter <= counter + 1;
 	        rgbs[7:0] <= {rgbs[6:0], si};
+
             if (counter[2:0] == 3'b000) begin
                 if (rgbs[7] == 1'b1) begin
-                    row <= row + 1;
+                    row_inc_needed <= 1'b1;
+                end else begin
+                    row_inc_needed <= 1'b0;
                 end
             end
         end 

@@ -1,54 +1,56 @@
 #$ TOOL ispLEVER Classic 2.0.00.17.20.15
-#$ DATE Tue Jun 28 00:15:46 2016
+#$ DATE Sun Feb 05 16:48:17 2017
 #$ MODULE rgbmatrixpanel_cpld
-#$ PINS 17 rgbs_6_ rgbs_7_ rgbs_5_ rgbs_4_ row_3_ rgbs_3_ si rgbs_2_ clk rgbs_1_ reset \
-#  rgbs_0_ clk_out row_2_ latch_out row_1_ row_0_
-#$ NODES 18 counter_0_ counter_1_ counter_2_ inst_latch_needed rgbsDFFRH_0_reg \
-#  rgbsDFFRH_1_reg rgbsDFFRH_2_reg rgbsDFFRH_3_reg rgbsDFFRH_4_reg rgbsDFFRH_5_reg \
-#  rgbsDFFRH_6_reg rgbsDFFRH_7_reg rowDFFCSH_0_reg rowDFFCSH_1_reg rowDFFCSH_2_reg \
-#  rowDFFCSH_3_reg clk_outDFFRHreg latch_outDFFRHreg
+#$ PINS 17 rgbs_7_ row_3_ si clk reset clk_out latch_out rgbs_6_ rgbs_5_ rgbs_4_ rgbs_3_ \
+#  rgbs_2_ rgbs_1_ rgbs_0_ row_2_ row_1_ row_0_
+#$ NODES 19 counter_0_ counter_1_ counter_2_ inst_latch_needed inst_row_inc_needed \
+#  rgbsDFFRH_0_reg rgbsDFFRH_1_reg rgbsDFFRH_2_reg rgbsDFFRH_3_reg rgbsDFFRH_4_reg \
+#  rgbsDFFRH_5_reg rgbsDFFRH_6_reg rgbsDFFRH_7_reg rowDFFCSH_0_reg rowDFFCSH_1_reg \
+#  rowDFFCSH_2_reg rowDFFCSH_3_reg clk_outDFFSHreg latch_outDFFRHreg
 .model spi_to_rgbmatrixpanel
 .inputs si.BLIF clk.BLIF reset.BLIF counter_0_.BLIF counter_1_.BLIF \
-counter_2_.BLIF inst_latch_needed.BLIF rgbsDFFRH_0_reg.BLIF \
-rgbsDFFRH_1_reg.BLIF rgbsDFFRH_2_reg.BLIF rgbsDFFRH_3_reg.BLIF \
-rgbsDFFRH_4_reg.BLIF rgbsDFFRH_5_reg.BLIF rgbsDFFRH_6_reg.BLIF \
-rgbsDFFRH_7_reg.BLIF rowDFFCSH_0_reg.BLIF rowDFFCSH_1_reg.BLIF \
-rowDFFCSH_2_reg.BLIF rowDFFCSH_3_reg.BLIF clk_outDFFRHreg.BLIF \
-latch_outDFFRHreg.BLIF
+counter_2_.BLIF inst_latch_needed.BLIF inst_row_inc_needed.BLIF \
+rgbsDFFRH_0_reg.BLIF rgbsDFFRH_1_reg.BLIF rgbsDFFRH_2_reg.BLIF \
+rgbsDFFRH_3_reg.BLIF rgbsDFFRH_4_reg.BLIF rgbsDFFRH_5_reg.BLIF \
+rgbsDFFRH_6_reg.BLIF rgbsDFFRH_7_reg.BLIF rowDFFCSH_0_reg.BLIF \
+rowDFFCSH_1_reg.BLIF rowDFFCSH_2_reg.BLIF rowDFFCSH_3_reg.BLIF \
+clk_outDFFSHreg.BLIF latch_outDFFRHreg.BLIF
 .outputs rgbs_7_ row_3_ clk_out latch_out rgbs_6_ rgbs_5_ rgbs_4_ rgbs_3_ \
-rgbs_2_ rgbs_1_ rgbs_0_ row_2_ row_1_ row_0_ rgbsDFFRH_7_reg.D \
-rgbsDFFRH_7_reg.C rgbsDFFRH_7_reg.AR rowDFFCSH_1_reg.D rowDFFCSH_1_reg.CE \
-rowDFFCSH_1_reg.C rowDFFCSH_1_reg.AP rowDFFCSH_2_reg.D rowDFFCSH_2_reg.CE \
-rowDFFCSH_2_reg.C rowDFFCSH_2_reg.AP rowDFFCSH_3_reg.D rowDFFCSH_3_reg.CE \
-rowDFFCSH_3_reg.C rowDFFCSH_3_reg.AP rgbsDFFRH_0_reg.D rgbsDFFRH_0_reg.C \
-rgbsDFFRH_0_reg.AR rgbsDFFRH_1_reg.D rgbsDFFRH_1_reg.C rgbsDFFRH_1_reg.AR \
-rgbsDFFRH_2_reg.D rgbsDFFRH_2_reg.C rgbsDFFRH_2_reg.AR rgbsDFFRH_3_reg.D \
-rgbsDFFRH_3_reg.C rgbsDFFRH_3_reg.AR rgbsDFFRH_4_reg.D rgbsDFFRH_4_reg.C \
-rgbsDFFRH_4_reg.AR rgbsDFFRH_5_reg.D rgbsDFFRH_5_reg.C rgbsDFFRH_5_reg.AR \
-rgbsDFFRH_6_reg.D rgbsDFFRH_6_reg.C rgbsDFFRH_6_reg.AR counter_0_.D \
-counter_0_.C counter_0_.AR counter_1_.D counter_1_.C counter_1_.AR \
-counter_2_.D counter_2_.C counter_2_.AR rowDFFCSH_0_reg.D rowDFFCSH_0_reg.CE \
-rowDFFCSH_0_reg.C rowDFFCSH_0_reg.AP latch_outDFFRHreg.D latch_outDFFRHreg.C \
-latch_outDFFRHreg.AR clk_outDFFRHreg.D clk_outDFFRHreg.C clk_outDFFRHreg.AR \
-inst_latch_needed.D inst_latch_needed.CE inst_latch_needed.C \
-inst_latch_needed.AR
+rgbs_2_ rgbs_1_ rgbs_0_ row_2_ row_1_ row_0_ rgbsDFFRH_2_reg.D \
+rgbsDFFRH_2_reg.C rgbsDFFRH_2_reg.AR rgbsDFFRH_3_reg.D rgbsDFFRH_3_reg.C \
+rgbsDFFRH_3_reg.AR rgbsDFFRH_4_reg.D rgbsDFFRH_4_reg.C rgbsDFFRH_4_reg.AR \
+rgbsDFFRH_5_reg.D rgbsDFFRH_5_reg.C rgbsDFFRH_5_reg.AR rgbsDFFRH_6_reg.D \
+rgbsDFFRH_6_reg.C rgbsDFFRH_6_reg.AR rgbsDFFRH_7_reg.D rgbsDFFRH_7_reg.C \
+rgbsDFFRH_7_reg.AR rowDFFCSH_0_reg.D rowDFFCSH_0_reg.CE rowDFFCSH_0_reg.C \
+rowDFFCSH_0_reg.AP rowDFFCSH_1_reg.D rowDFFCSH_1_reg.CE rowDFFCSH_1_reg.C \
+rowDFFCSH_1_reg.AP rowDFFCSH_2_reg.D rowDFFCSH_2_reg.CE rowDFFCSH_2_reg.C \
+rowDFFCSH_2_reg.AP rowDFFCSH_3_reg.D rowDFFCSH_3_reg.CE rowDFFCSH_3_reg.C \
+rowDFFCSH_3_reg.AP rgbsDFFRH_0_reg.D rgbsDFFRH_0_reg.C rgbsDFFRH_0_reg.AR \
+rgbsDFFRH_1_reg.D rgbsDFFRH_1_reg.C rgbsDFFRH_1_reg.AR inst_row_inc_needed.D \
+inst_row_inc_needed.CE inst_row_inc_needed.C inst_row_inc_needed.AP \
+counter_0_.D counter_0_.C counter_0_.AR counter_1_.D counter_1_.C \
+counter_1_.AR counter_2_.D counter_2_.C counter_2_.AR clk_outDFFSHreg.D \
+clk_outDFFSHreg.C clk_outDFFSHreg.AP latch_outDFFRHreg.D latch_outDFFRHreg.C \
+latch_outDFFRHreg.AR inst_latch_needed.D inst_latch_needed.CE \
+inst_latch_needed.C inst_latch_needed.AP
 .names rowDFFCSH_0_reg.BLIF rowDFFCSH_0_reg.D
 0 1
 1 0
-.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF rgbsDFFRH_6_reg.BLIF \
-inst_latch_needed.CE
---1- 1
--1-- 1
-1--- 1
----1 1
-0000 0
+.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF inst_latch_needed.BLIF \
+rgbsDFFRH_6_reg.BLIF inst_latch_needed.CE
+0101- 1
+000-1 1
+-1-0- 0
+-0--0 0
+--1-- 0
+1---- 0
 .names rgbsDFFRH_7_reg.BLIF rgbs_7_
 1 1
 0 0
 .names rowDFFCSH_3_reg.BLIF row_3_
 1 1
 0 0
-.names clk_outDFFRHreg.BLIF clk_out
+.names clk_outDFFSHreg.BLIF clk_out
 1 1
 0 0
 .names latch_outDFFRHreg.BLIF latch_out
@@ -84,95 +86,6 @@ inst_latch_needed.CE
 .names rowDFFCSH_0_reg.BLIF row_0_
 1 1
 0 0
-.names rgbsDFFRH_6_reg.BLIF rgbsDFFRH_7_reg.D
-1 1
-0 0
-.names clk.BLIF rgbsDFFRH_7_reg.C
-1 1
-0 0
-.names reset.BLIF rgbsDFFRH_7_reg.AR
-0 1
-1 0
-.names rowDFFCSH_0_reg.BLIF rowDFFCSH_1_reg.BLIF rowDFFCSH_1_reg.D
-10 1
-01 1
-00 0
-11 0
-.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF rgbsDFFRH_7_reg.BLIF \
-rowDFFCSH_1_reg.CE
-0001 1
---1- 0
--1-- 0
-1--- 0
----0 0
-.names clk.BLIF rowDFFCSH_1_reg.C
-1 1
-0 0
-.names reset.BLIF rowDFFCSH_1_reg.AP
-0 1
-1 0
-.names rowDFFCSH_0_reg.BLIF rowDFFCSH_1_reg.BLIF rowDFFCSH_2_reg.BLIF \
-rowDFFCSH_2_reg.D
-110 1
--01 1
-0-1 1
-111 0
--00 0
-0-0 0
-.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF rgbsDFFRH_7_reg.BLIF \
-rowDFFCSH_2_reg.CE
-0001 1
---1- 0
--1-- 0
-1--- 0
----0 0
-.names clk.BLIF rowDFFCSH_2_reg.C
-1 1
-0 0
-.names reset.BLIF rowDFFCSH_2_reg.AP
-0 1
-1 0
-.names rowDFFCSH_0_reg.BLIF rowDFFCSH_1_reg.BLIF rowDFFCSH_2_reg.BLIF \
-rowDFFCSH_3_reg.BLIF rowDFFCSH_3_reg.D
-1110 1
---01 1
--0-1 1
-0--1 1
-1111 0
---00 0
--0-0 0
-0--0 0
-.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF rgbsDFFRH_7_reg.BLIF \
-rowDFFCSH_3_reg.CE
-0001 1
---1- 0
--1-- 0
-1--- 0
----0 0
-.names clk.BLIF rowDFFCSH_3_reg.C
-1 1
-0 0
-.names reset.BLIF rowDFFCSH_3_reg.AP
-0 1
-1 0
-.names si.BLIF rgbsDFFRH_0_reg.D
-1 1
-0 0
-.names clk.BLIF rgbsDFFRH_0_reg.C
-1 1
-0 0
-.names reset.BLIF rgbsDFFRH_0_reg.AR
-0 1
-1 0
-.names rgbsDFFRH_0_reg.BLIF rgbsDFFRH_1_reg.D
-1 1
-0 0
-.names clk.BLIF rgbsDFFRH_1_reg.C
-1 1
-0 0
-.names reset.BLIF rgbsDFFRH_1_reg.AR
-0 1
-1 0
 .names rgbsDFFRH_1_reg.BLIF rgbsDFFRH_2_reg.D
 1 1
 0 0
@@ -218,6 +131,122 @@ rowDFFCSH_3_reg.CE
 .names reset.BLIF rgbsDFFRH_6_reg.AR
 0 1
 1 0
+.names rgbsDFFRH_6_reg.BLIF rgbsDFFRH_7_reg.D
+1 1
+0 0
+.names clk.BLIF rgbsDFFRH_7_reg.C
+1 1
+0 0
+.names reset.BLIF rgbsDFFRH_7_reg.AR
+0 1
+1 0
+.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF \
+inst_row_inc_needed.BLIF rowDFFCSH_0_reg.CE
+1001 1
+--1- 0
+-1-- 0
+0--- 0
+---0 0
+.names clk.BLIF rowDFFCSH_0_reg.C
+0 1
+1 0
+.names reset.BLIF rowDFFCSH_0_reg.AP
+0 1
+1 0
+.names rowDFFCSH_0_reg.BLIF rowDFFCSH_1_reg.BLIF rowDFFCSH_1_reg.D
+10 1
+01 1
+00 0
+11 0
+.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF \
+inst_row_inc_needed.BLIF rowDFFCSH_1_reg.CE
+1001 1
+--1- 0
+-1-- 0
+0--- 0
+---0 0
+.names clk.BLIF rowDFFCSH_1_reg.C
+0 1
+1 0
+.names reset.BLIF rowDFFCSH_1_reg.AP
+0 1
+1 0
+.names rowDFFCSH_0_reg.BLIF rowDFFCSH_1_reg.BLIF rowDFFCSH_2_reg.BLIF \
+rowDFFCSH_2_reg.D
+110 1
+-01 1
+0-1 1
+111 0
+-00 0
+0-0 0
+.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF \
+inst_row_inc_needed.BLIF rowDFFCSH_2_reg.CE
+1001 1
+--1- 0
+-1-- 0
+0--- 0
+---0 0
+.names clk.BLIF rowDFFCSH_2_reg.C
+0 1
+1 0
+.names reset.BLIF rowDFFCSH_2_reg.AP
+0 1
+1 0
+.names rowDFFCSH_0_reg.BLIF rowDFFCSH_1_reg.BLIF rowDFFCSH_2_reg.BLIF \
+rowDFFCSH_3_reg.BLIF rowDFFCSH_3_reg.D
+1110 1
+--01 1
+-0-1 1
+0--1 1
+1111 0
+--00 0
+-0-0 0
+0--0 0
+.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF \
+inst_row_inc_needed.BLIF rowDFFCSH_3_reg.CE
+1001 1
+--1- 0
+-1-- 0
+0--- 0
+---0 0
+.names clk.BLIF rowDFFCSH_3_reg.C
+0 1
+1 0
+.names reset.BLIF rowDFFCSH_3_reg.AP
+0 1
+1 0
+.names si.BLIF rgbsDFFRH_0_reg.D
+1 1
+0 0
+.names clk.BLIF rgbsDFFRH_0_reg.C
+1 1
+0 0
+.names reset.BLIF rgbsDFFRH_0_reg.AR
+0 1
+1 0
+.names rgbsDFFRH_0_reg.BLIF rgbsDFFRH_1_reg.D
+1 1
+0 0
+.names clk.BLIF rgbsDFFRH_1_reg.C
+1 1
+0 0
+.names reset.BLIF rgbsDFFRH_1_reg.AR
+0 1
+1 0
+.names rgbsDFFRH_7_reg.BLIF inst_row_inc_needed.D
+1 1
+0 0
+.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF inst_row_inc_needed.CE
+000 1
+-1- 0
+1-- 0
+--1 0
+.names clk.BLIF inst_row_inc_needed.C
+1 1
+0 0
+.names reset.BLIF inst_row_inc_needed.AP
+0 1
+1 0
 .names counter_0_.BLIF counter_0_.D
 0 1
 1 0
@@ -251,48 +280,37 @@ rowDFFCSH_3_reg.CE
 .names reset.BLIF counter_2_.AR
 0 1
 1 0
-.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF rgbsDFFRH_7_reg.BLIF \
-rowDFFCSH_0_reg.CE
-0001 1
---1- 0
--1-- 0
-1--- 0
----0 0
-.names clk.BLIF rowDFFCSH_0_reg.C
-1 1
-0 0
-.names reset.BLIF rowDFFCSH_0_reg.AP
+.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF clk_outDFFSHreg.D
+000 1
+-1- 0
+1-- 0
+--1 0
+.names clk.BLIF clk_outDFFSHreg.C
 0 1
 1 0
-.names inst_latch_needed.BLIF latch_outDFFRHreg.D
-1 1
-0 0
+.names reset.BLIF clk_outDFFSHreg.AP
+0 1
+1 0
+.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF inst_latch_needed.BLIF \
+latch_outDFFRHreg.D
+0101 1
+--1- 0
+-0-- 0
+1--- 0
+---0 0
 .names clk.BLIF latch_outDFFRHreg.C
 0 1
 1 0
 .names reset.BLIF latch_outDFFRHreg.AR
 0 1
 1 0
-.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF clk_outDFFRHreg.D
-000 1
--1- 0
-1-- 0
---1 0
-.names clk.BLIF clk_outDFFRHreg.C
+.names counter_1_.BLIF inst_latch_needed.D
 0 1
 1 0
-.names reset.BLIF clk_outDFFRHreg.AR
-0 1
-1 0
-.names counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF inst_latch_needed.D
-000 1
--1- 0
-1-- 0
---1 0
 .names clk.BLIF inst_latch_needed.C
 0 1
 1 0
-.names reset.BLIF inst_latch_needed.AR
+.names reset.BLIF inst_latch_needed.AP
 0 1
 1 0
 .end

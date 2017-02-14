@@ -14,8 +14,8 @@ Voltage = 3.3;
 RCS = "$Header $";
 Parent = lc4k32v.lci;
 Design = ;
-DATE = 11/22/2015;
-TIME = 01:10:35;
+DATE = 02/05/2017;
+TIME = 16:47:42;
 Source_Format = Pure_Verilog_HDL;
 Type = ;
 Pre_Fit_Time = ;
@@ -96,28 +96,32 @@ Adjust_input_assignments = Off;
 
 [LOCATION ASSIGNMENTS]
 // Block A
-si=pin,42,-,A,2;
-clk=pin,40,-,A,0;
-reset=pin,43,-,A,3;
-rgbs_6_=pin,41,-,A,7;
-rgbs_7_=pin,44,-,A,9;
+rgbs_7_=pin,40,-,A,7;
+clk_out=pin,16,-,A,0;
+rgbs_6_=pin,42,-,A,9;
 counter_0_=node,-,-,A,12;
-counter_1_=node,-,-,A,5;
-counter_2_=node,-,-,A,3;
+counter_1_=node,-,-,A,4;
+counter_2_=node,-,-,A,2;
 inst_latch_needed=node,-,-,A,1;
+inst_row_inc_needed=node,-,-,A,3;
+inst_latch_needed_0=node,-,-,A,5;
 // Block B
-rgbs_5_=pin,18,-,B,2;
-rgbs_4_=pin,19,-,B,3;
-row_3_=pin,35,-,B,0;
-rgbs_3_=pin,20,-,B,4;
-rgbs_2_=pin,21,-,B,5;
-rgbs_1_=pin,22,-,B,10;
-rgbs_0_=pin,24,-,B,12;
-clk_out=pin,25,-,B,6;
-row_2_=pin,31,-,B,1;
-latch_out=pin,26,-,B,7;
-row_1_=pin,30,-,B,9;
-row_0_=pin,29,-,B,8;
+clk=pin,37,-,B,14;
+reset=pin,36,-,B,13;
+row_3_=pin,20,-,B,2;
+latch_out=pin,18,-,B,0;
+rgbs_5_=pin,30,-,B,9;
+rgbs_4_=pin,31,-,B,12;
+rgbs_3_=pin,29,-,B,8;
+rgbs_2_=pin,25,-,B,6;
+rgbs_1_=pin,26,-,B,7;
+rgbs_0_=pin,24,-,B,5;
+row_2_=pin,19,-,B,1;
+row_1_=pin,22,-,B,4;
+row_0_=pin,21,-,B,3;
+// Input/Clock Pins
+si=pin,39,-,-,-;
+
 [PTOE ASSIGNMENTS]
 
 [FAST BYPASS]
@@ -135,18 +139,18 @@ Default=NONE;
 si=LVCMOS18,pin,-,-;
 clk=LVCMOS18,pin,-,-;
 reset=LVCMOS18,pin,-,-;
-rgbs_6_=LVCMOS18,pin,0,-;
 rgbs_7_=LVCMOS18,pin,0,-;
+row_3_=LVCMOS18,pin,1,-;
+clk_out=LVCMOS18,pin,0,-;
+latch_out=LVCMOS18,pin,1,-;
+rgbs_6_=LVCMOS18,pin,0,-;
 rgbs_5_=LVCMOS18,pin,1,-;
 rgbs_4_=LVCMOS18,pin,1,-;
-row_3_=LVCMOS18,pin,1,-;
 rgbs_3_=LVCMOS18,pin,1,-;
 rgbs_2_=LVCMOS18,pin,1,-;
 rgbs_1_=LVCMOS18,pin,1,-;
 rgbs_0_=LVCMOS18,pin,1,-;
-clk_out=LVCMOS18,pin,1,-;
 row_2_=LVCMOS18,pin,1,-;
-latch_out=LVCMOS18,pin,1,-;
 row_1_=LVCMOS18,pin,1,-;
 row_0_=LVCMOS18,pin,1,-;
 
@@ -162,16 +166,16 @@ Default=FAST;
 Default=UP;
 
 [FITTER RESULTS]
-I/O_pin_util = 53;
-I/O_pin = 16;
-Logic_PT_util = 21;
-Logic_PT = 35;
-Occupied_MC_util = 56;
-Occupied_MC = 18;
-Occupied_PT_util = 29;
-Occupied_PT = 50;
-GLB_input_util = 33;
-GLB_input = 24;
+I/O_pin_util = 50;
+I/O_pin = 15;
+Logic_PT_util = 26;
+Logic_PT = 43;
+Occupied_MC_util = 62;
+Occupied_MC = 20;
+Occupied_PT_util = 36;
+Occupied_PT = 61;
+GLB_input_util = 37;
+GLB_input = 27;
 
 [TIMING CONSTRAINTS]
 layer=OFF;
