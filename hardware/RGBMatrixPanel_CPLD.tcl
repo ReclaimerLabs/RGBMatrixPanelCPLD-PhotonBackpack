@@ -11340,3 +11340,36 @@ if [runCmd "\"$cpld_bin/synsvf\" -exe \"$install_dir/ispvmsystem/ispufw\" -prj r
 
 ########## Tcl recorder end at 02/05/17 16:48:03 ###########
 
+
+########## Tcl recorder starts at 04/04/17 00:11:59 ##########
+
+# Commands to make the Process: 
+# Constraint Editor
+if [runCmd "\"$cpld_bin/blifstat\" -i rgbmatrixpanel_cpld.bl5 -o rgbmatrixpanel_cpld.sif"] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+# Application to view the Process: 
+# Constraint Editor
+if [catch {open lattice_cmd.rs2 w} rspFile] {
+	puts stderr "Cannot create response file lattice_cmd.rs2: $rspFile"
+} else {
+	puts $rspFile "-nodal -src rgbmatrixpanel_cpld.bl5 -type BLIF -presrc rgbmatrixpanel_cpld.bl3 -crf rgbmatrixpanel_cpld.crf -sif rgbmatrixpanel_cpld.sif -devfile \"$install_dir/ispcpld/dat/lc4k/m4s_32_30.dev\" -lci rgbmatrixpanel_cpld.lct
+"
+	close $rspFile
+}
+if [runCmd "\"$cpld_bin/lciedit\" @lattice_cmd.rs2"] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+
+########## Tcl recorder end at 04/04/17 00:11:59 ###########
+
